@@ -7,11 +7,11 @@
     min-height: 57vh !important;
 }
 .ant-table table {
-    font-size: 0.7rem;
+    font-size: 0.9em;
 }
 
 .ant-badge-status-dot {
-    width: 14px !important;
-    height: 14px !important;
+    width: 1.2em !important;
+    height: 1.2em !important;
 }
 

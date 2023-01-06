@@ -1,11 +1,12 @@
-import { Layout, theme } from 'antd';
+import { Layout, theme, ConfigProvider } from 'antd';
 import { Outlet } from 'react-router-dom';
 const { Header, Content } = Layout;
 
 const BodyLayout = () => {
-    const {
-        token: { colorBgContainer },
-    } = theme.useToken();
+    const defaultData = {
+        borderRadius: 6,
+        colorPrimary: '#FFB600',
+    };
     return (
         <Layout
             className="layout bg-[url('bg-layout.webp')] bg-cover overflow-hidden flex"
@@ -17,11 +18,16 @@ const BodyLayout = () => {
             <Header className="!bg-white shadow-md">
                 <div className="logo" />
             </Header>
-            <Content
-                className="container max-w-[95vw] p-8 rounded-lg max-h-[80vh] bg-white my-auto
-                shadow-lg flex !text-xs overflow-auto"
-            >
-                <Outlet />
+            <Content className="flex">
+                <ConfigProvider
+                    theme={{
+                        token: {
+                            colorPrimary: defaultData.colorPrimary,
+                        },
+                    }}
+                >
+                    <Outlet />
+                </ConfigProvider>
             </Content>
         </Layout>
     );
