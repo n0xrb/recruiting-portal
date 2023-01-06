@@ -10,3 +10,8 @@
     font-size: 0.7rem;
 }
 
+.ant-badge-status-dot {
+    width: 14px !important;
+    height: 14px !important;
+}
+

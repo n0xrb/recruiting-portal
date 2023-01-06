@@ -1,4 +1,42 @@
-import { Table } from 'antd';
+import { Table, Badge, Dropdown } from 'antd';
+import { SettingFilled, UserOutlined } from '@ant-design/icons';
+const handleButtonClick = e => {
+    message.info('Click on left button.');
+    console.log('click left button', e);
+};
+const handleMenuClick = e => {
+    message.info('Click on menu item.');
+    console.log('click', e);
+};
+const items = [
+    {
+        label: '1st menu item',
+        key: '1',
+        icon: <UserOutlined />,
+    },
+    {
+        label: '2nd menu item',
+        key: '2',
+        icon: <UserOutlined />,
+    },
+    {
+        label: '3rd menu item',
+        key: '3',
+        icon: <UserOutlined />,
+        danger: true,
+    },
+    {
+        label: '4rd menu item',
+        key: '4',
+        icon: <UserOutlined />,
+        danger: true,
+        disabled: true,
+    },
+];
+const menuProps = {
+    items,
+    onClick: handleMenuClick,
+};
 const columns = [
     {
         title: 'ID Solicitud',
@@ -24,6 +62,7 @@ const columns = [
         title: 'Worker Type',
         dataIndex: 'workerType',
         defaultSortOrder: 'descend',
+        width: 100,
         sorter: (a, b) => a.workerType - b.workerType,
     },
     {
@@ -42,6 +81,7 @@ const columns = [
         title: 'Solicitante',
         dataIndex: 'requestedBy',
         defaultSortOrder: 'descend',
+        ellipsis: true,
         sorter: (a, b) => a.requestedBy - b.requestedBy,
     },
     {
@@ -49,18 +89,38 @@ const columns = [
         dataIndex: 'los',
         defaultSortOrder: 'descend',
         sorter: (a, b) => a.los - b.los,
+        width: 90,
     },
     {
         title: 'Estado Solicitud',
         dataIndex: 'requestStatus',
-        defaultSortOrder: 'descend',
-        sorter: (a, b) => a.requestStatus - b.requestStatus,
+        width: '80px',
+        render: (_, record) => {
+            const value = record.requestStatus;
+
+            if (value === 'Aprobado') {
+                return <Badge key={record.requestID} color="green" className="flex justify-center w-full" />;
+            } else if (value === 'Rechazado') {
+                return <Badge key={record.requestID} color="red" className="flex justify-center w-full" />;
+            } else {
+                return <Badge key={record.requestID} color="yellow" className="flex justify-center w-full" />;
+            }
+        },
     },
     {
         title: 'Vacante Creada',
         dataIndex: 'vacancyIsCreated',
         defaultSortOrder: 'descend',
         sorter: (a, b) => a.vacancyIsCreated - b.vacancyIsCreated,
+        render: (_, record) => {
+            const value = record.vacancyIsCreated;
+
+            if (value === 'Creada') {
+                return <Badge key={record.requestID} color="green" className="flex justify-center w-full" />;
+            } else {
+                return <Badge key={record.requestID} color="yellow" className="flex justify-center w-full" />;
+            }
+        },
     },
     {
         title: 'Total Cupos Disponibles',
@@ -71,6 +131,16 @@ const columns = [
     {
         title: 'Acción',
         dataIndex: 'action',
+        width: 80,
+        render: (_, record) => {
+            return (
+                <Dropdown menu={menuProps} trigger={['click']}>
+                    <div className="bg-[#FFB600] text-black text-center pb-1 cursor-pointer">
+                        <SettingFilled className="text-sm self-center" />
+                    </div>
+                </Dropdown>
+            );
+        },
     },
 ];
 const data = [
@@ -2878,6 +2948,7 @@ const data = [
 const onChange = (pagination, filters, sorter, extra) => {
     console.log('params', pagination, filters, sorter, extra);
 };
+
 const Home = () => {
     return (
         <>
