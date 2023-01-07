@@ -5,7 +5,7 @@ const { Header, Content } = Layout;
 const BodyLayout = () => {
     const defaultData = {
         borderRadius: 6,
-        colorPrimary: '#FFB600',
+        colorPrimary: '#ff9200',
     };
     return (
         <Layout

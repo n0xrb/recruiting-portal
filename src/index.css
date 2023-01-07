@@ -14,4 +14,13 @@
     width: 1.2em !important;
     height: 1.2em !important;
 }
+.ant-btn-primary {
+    background-color: #ff9200 !important;
+}
+.ant-btn-link {
+    color: #000;
+}
+.ant-btn-link:hover {
+    color: #ff9100 !important;
+}
 
