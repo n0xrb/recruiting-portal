@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.ghost {
+    display: none;
+}
 .ant-table-tbody {
     height: 57vh !important;
     min-height: 57vh !important;
@@ -22,5 +24,10 @@
 }
 .ant-btn-link:hover {
     color: #ff9100 !important;
+}
+
+.ant-select .ant-select-selection-placeholder,
+.ant-picker .ant-picker-input > input {
+    color: rgb(0 0 0 / 72%) !important;
 }
 

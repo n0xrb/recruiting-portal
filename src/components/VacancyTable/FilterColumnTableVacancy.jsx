@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Input } from 'antd';
 const FilterColumnTableVacancy = ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => {
     return (
@@ -38,4 +39,4 @@ const FilterColumnTableVacancy = ({ setSelectedKeys, selectedKeys, confirm, clea
         </div>
     );
 };
-export default FilterColumnTableVacancy;
+export default memo(FilterColumnTableVacancy);
