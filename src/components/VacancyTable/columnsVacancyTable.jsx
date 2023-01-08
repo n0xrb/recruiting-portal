@@ -19,18 +19,21 @@ const columnsVacancyTable = () => {
             label: 'Aprobar vacante',
             key: '1',
             icon: <UserOutlined />,
+            disabled: true,
             className: 'select-none',
         },
         {
             label: 'Agendar entrevista',
             key: '2',
             icon: <UserOutlined />,
+            disabled: true,
             className: 'select-none',
         },
         {
             label: 'Asignar postulante',
             key: '3',
             icon: <UserOutlined />,
+            disabled: true,
             className: 'select-none',
         },
         {
@@ -72,7 +75,7 @@ const columnsVacancyTable = () => {
         },
         {
             title: 'Fecha Apertura',
-            dataIndex: 'startDateVancancy',
+            dataIndex: 'startDate',
             width: '9em',
             sorter: (a, b) => new Date(a.startDate) - new Date(b.startDate),
             filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => {
@@ -92,9 +95,9 @@ const columnsVacancyTable = () => {
         },
         {
             title: 'Fecha Ingreso',
-            dataIndex: 'entryDateEmployee',
+            dataIndex: 'employeeStartDate',
             width: '8em',
-            sorter: (a, b) => new Date(a.entryDateEmployee) - new Date(b.entryDateEmployee),
+            sorter: (a, b) => new Date(a.employeeStartDate) - new Date(b.employeeStartDate),
             filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => {
                 return (
                     <FilterColumnTableVacancy
@@ -108,11 +111,11 @@ const columnsVacancyTable = () => {
             filterIcon: () => {
                 return <SearchOutlined />;
             },
-            onFilter: (value, record) => record.entryDateEmployee.toString().includes(value),
+            onFilter: (value, record) => record.employeeStartDate.toString().includes(value),
         },
         {
             title: 'Tipo Trabajador',
-            dataIndex: 'workerType',
+            dataIndex: 'typeWorker',
             width: '8em',
             filters: [
                 {
@@ -136,92 +139,85 @@ const columnsVacancyTable = () => {
                     key: useId(),
                 },
             ],
-            onFilter: (value, record) => record.workerType.includes(value),
+            onFilter: (value, record) => record.typeWorker.includes(value),
             filterIcon: () => {
                 return <FilterFilled />;
             },
         },
-        {
-            title: 'Categoría Global',
-            dataIndex: 'jobTitle',
-            width: 120,
-            filters: [
-                {
-                    text: 'Partner',
-                    value: 'Partner',
-                    key: useId(),
-                },
-                {
-                    text: 'Salaried Partner',
-                    value: 'Salaried Partner',
-                    key: useId(),
-                },
-                {
-                    text: 'Senior Manager 2',
-                    value: 'Senior Manager 2',
-                    key: useId(),
-                },
-                {
-                    text: 'Senior Manager',
-                    value: 'Senior Manager',
-                    key: useId(),
-                },
-                {
-                    text: 'Manager 2',
-                    value: 'Manager 2',
-                    key: useId(),
-                },
-                {
-                    text: 'Manager',
-                    value: 'Manager',
-                    key: useId(),
-                },
-                {
-                    text: 'Senior Associate 2',
-                    value: 'Senior Associate 2',
-                    key: useId(),
-                },
-                {
-                    text: 'Senior Associate',
-                    value: 'Senior Associate',
-                    key: useId(),
-                },
-                {
-                    text: 'Associate 2',
-                    value: 'Associate 2',
-                    key: useId(),
-                },
-                {
-                    text: 'Associate',
-                    value: 'Associate',
-                    key: useId(),
-                },
-                {
-                    text: 'Intern/Trainee',
-                    value: 'Intern/Trainee',
-                    key: useId(),
-                },
-            ],
-            onFilter: (value, record) => record.jobTitle.includes(value),
-        },
+
         {
             title: 'Categoría Local',
-            dataIndex: 'jobTitle',
+            dataIndex: 'localCategory',
             width: 120,
             filters: [
                 {
-                    text: 'Partner',
-                    value: 'Partner',
+                    text: 'Socio EQ',
+                    value: 'Socio EQ',
                     key: useId(),
                 },
                 {
-                    text: 'Salaried Partner',
-                    value: 'Salaried Partner',
+                    text: 'Socio AP',
+                    value: 'Socio AP',
                     key: useId(),
                 },
                 {
-                    text: 'Senior Manager 2',
-                    value: 'Senior Manager 2',
+                    text: 'Senior Manager I',
+                    value: 'Senior Manager I',
+                    key: useId(),
+                },
+                {
+                    text: 'Senior Manager II',
+                    value: 'Senior Manager II',
+                    key: useId(),
+                },
+                {
+                    text: 'Gerente II',
+                    value: 'Gerente II',
+                    key: useId(),
+                },
+                {
+                    text: 'Gerente I',
+                    value: 'Gerente I',
+                    key: useId(),
+                },
+                {
+                    text: 'Senior A',
+                    value: 'Senior A',
+                    key: useId(),
+                },
+                {
+                    text: 'Senior B',
+                    value: 'Senior B',
+                    key: useId(),
+                },
+                {
+                    text: 'Senior C',
+                    value: 'Senior C',
+                    key: useId(),
+                },
+                {
+                    text: 'Analista A',
+                    value: 'Analista A',
+                    key: useId(),
+                },
+                {
+                    text: 'Analista B',
+                    value: 'Analista B',
+                    key: useId(),
+                },
+                {
+                    text: 'Analista',
+                    value: 'Analista',
+                    key: useId(),
+                },
+                {
+                    text: 'Estudiante En Practica',
+                    value: 'Estudiante En Practica',
+                    key: useId(),
+                },
+                {
+                    text: 'Socio',
+                    value: 'Director',
                     key: useId(),
                 },
                 {
@@ -230,42 +226,158 @@ const columnsVacancyTable = () => {
                     key: useId(),
                 },
                 {
-                    text: 'Manager 2',
-                    value: 'Manager 2',
+                    text: 'Gerente',
+                    value: 'Gerente',
                     key: useId(),
                 },
                 {
-                    text: 'Manager',
-                    value: 'Manager',
+                    text: 'Consultor Líder',
+                    value: 'Consultor Líder',
                     key: useId(),
                 },
                 {
-                    text: 'Senior Associate 2',
-                    value: 'Senior Associate 2',
+                    text: 'Consultor Senior',
+                    value: 'Consultor Senior',
                     key: useId(),
                 },
                 {
-                    text: 'Senior Associate',
-                    value: 'Senior Associate',
+                    text: 'Consultor',
+                    value: 'Consultor',
                     key: useId(),
                 },
                 {
-                    text: 'Associate 2',
-                    value: 'Associate 2',
+                    text: 'Gerente De Desarrollo Y Mantencion',
+                    value: 'Gerente De Desarrollo Y Mantencion',
                     key: useId(),
                 },
                 {
-                    text: 'Associate',
-                    value: 'Associate',
+                    text: 'Coordinador De Planning',
+                    value: 'Coordinador De Planning',
                     key: useId(),
                 },
                 {
-                    text: 'Intern/Trainee',
-                    value: 'Intern/Trainee',
+                    text: 'Jefe Typing',
+                    value: 'Jefe Typing',
+                    key: useId(),
+                },
+                {
+                    text: 'Coordinador De Desarrollo Y Mantencion',
+                    value: 'Coordinador De Desarrollo Y Mantencion',
+                    key: useId(),
+                },
+                {
+                    text: 'Especialista De Desarrollo',
+                    value: 'Especialista De Desarrollo',
+                    key: useId(),
+                },
+                {
+                    text: 'Analista De Desarrollo',
+                    value: 'Analista De Desarrollo',
+                    key: useId(),
+                },
+                {
+                    text: 'Asistente De Desarrollo',
+                    value: 'Asistente De Desarrollo',
+                    key: useId(),
+                },
+                {
+                    text: 'Apoyo Administrativo',
+                    value: 'Apoyo Administrativo',
+                    key: useId(),
+                },
+                {
+                    text: 'Supervisor',
+                    value: 'Supervisor',
+                    key: useId(),
+                },
+                {
+                    text: 'Especialista Senior',
+                    value: 'Especialista Senior',
+                    key: useId(),
+                },
+                {
+                    text: 'Especialista',
+                    value: 'Especialista',
+                    key: useId(),
+                },
+                {
+                    text: 'Asistente',
+                    value: 'Asistente',
+                    key: useId(),
+                },
+                {
+                    text: 'Procurador',
+                    value: 'Procurador',
+                    key: useId(),
+                },
+                {
+                    text: 'Asistente De Riesgo',
+                    value: 'Asistente De Riesgo',
+                    key: useId(),
+                },
+                {
+                    text: 'Administrador De Sistema',
+                    value: 'Administrador De Sistema',
+                    key: useId(),
+                },
+                {
+                    text: 'Analista Trainee',
+                    value: 'Analista Trainee',
+                    key: useId(),
+                },
+                {
+                    text: 'Contador',
+                    value: 'Contador',
+                    key: useId(),
+                },
+                {
+                    text: 'Contador Lider',
+                    value: 'Contador Lider',
+                    key: useId(),
+                },
+                {
+                    text: 'Contador Senior',
+                    value: 'Contador Senior',
+                    key: useId(),
+                },
+                {
+                    text: 'Coordinador De Riesgo',
+                    value: 'Coordinador De Riesgo',
+                    key: useId(),
+                },
+                {
+                    text: 'Jefe De Grupo',
+                    value: 'Jefe De Grupo',
+                    key: useId(),
+                },
+                {
+                    text: 'Analistra Trainee',
+                    value: 'Analistra Trainee',
+                    key: useId(),
+                },
+                {
+                    text: 'Gerente Abajo',
+                    value: 'Gerente Abajo',
+                    key: useId(),
+                },
+                {
+                    text: 'Coordinador',
+                    value: 'Coordinador',
+                    key: useId(),
+                },
+                {
+                    text: 'Asistente Administrativo',
+                    value: 'Asistente Administrativo',
+                    key: useId(),
+                },
+                {
+                    text: 'Mensajero',
+                    value: 'Mensajero',
                     key: useId(),
                 },
             ],
-            onFilter: (value, record) => record.jobTitle.includes(value),
+            filterSearch: true,
+            onFilter: (value, record) => record.localCategory.includes(value),
         },
         {
             title: 'Oficina',
@@ -392,8 +504,8 @@ const columnsVacancyTable = () => {
         },
         {
             title: 'Total Cupos Disponibles',
-            dataIndex: 'totalVacancies',
-            sorter: (a, b) => a.totalVacancies - b.totalVacancies,
+            dataIndex: 'totalVacancy',
+            sorter: (a, b) => a.totalVacancy - b.totalVacancy,
             width: '8em',
             align: 'center',
         },

@@ -9,11 +9,12 @@ const BodyLayout = () => {
     };
     return (
         <Layout
-            className="layout bg-[url('bg-layout.webp')] bg-cover overflow-hidden flex"
+            className="layout bg-cover overflow-hidden flex"
             style={{
                 minHeight: '100vh',
                 minWidth: '100vw',
             }}
+            id="layoutContainer"
         >
             <Header className="!bg-white shadow-md">
                 <div className="logo" />

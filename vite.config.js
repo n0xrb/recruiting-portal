@@ -34,8 +34,8 @@ export default defineConfig(({ command, node }) => {
                 emptyOutDir: false,
             },
             optimizeDeps: {
-                entries: ['fake-backend', 'backend-dev', 'dist'],
-                include: ['fake-backend', 'backend-dev', 'dist'],
+                entries: ['backend-dev', 'dist'],
+                include: ['backend-dev', 'dist'],
             },
         };
     }

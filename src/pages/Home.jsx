@@ -60,7 +60,7 @@ export const loaderHome = async () => {
         const matrixWD = getMatrixWD();
         return { vacancyDataForTable, matrixWD };
     } else {
-        const vacancyDataForTable = new Promise((resolve, reject) => {
+        const promiseData = new Promise((resolve, reject) => {
             google.script.run
                 .withSuccessHandler(result => {
                     resolve(result);
@@ -70,6 +70,19 @@ export const loaderHome = async () => {
                 })
                 .getAllDataVacancy();
         });
-        return { vacancyDataForTable };
+        const promiseMatrix = new Promise((resolve, reject) => {
+            google.script.run
+                .withSuccessHandler(result => {
+                    resolve(result);
+                })
+                .withFailureHandler(error => {
+                    reject(error);
+                })
+                .getMatrixWD();
+        });
+        const vacancyDataForTable = await promiseData;
+        const matrixWD = await promiseMatrix;
+        console.log(vacancyDataForTable, matrixWD);
+        return { vacancyDataForTable, matrixWD };
     }
 };
