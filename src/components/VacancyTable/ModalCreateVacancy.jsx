@@ -1,6 +1,6 @@
-import { memo, useRef, useState } from 'react';
-import { Modal, Select, DatePicker, Divider, Form, Button, InputNumber, Input } from 'antd';
-
+import { memo, useRef, useState, useEffect } from 'react';
+import { Modal, Select, DatePicker, Divider, Form, Button, InputNumber, Input, Spin } from 'antd';
+const { TextArea } = Input;
 const typeRecruitment = [
     {
         label: 'Reclutamiento',
@@ -31,8 +31,9 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
     ]);
 
     const [costCenterID, setCostCenterID] = useState('');
+    const [matrixCurrentCategoriesNode, setMatrixCurrentCategoriesNode] = useState([]);
 
-    const [loadingSubmit, setLoadingSubmit] = useState(true);
+    const [loadingSubmit, setLoadingSubmit] = useState(false);
     const fixedTermContainer = useRef();
     const [form] = Form.useForm();
 
@@ -41,6 +42,13 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
     const [teamSelected, setTeamSelected] = useState('');
     const [officeSelected, setOfficeSelected] = useState('');
     const [localCategorySelected, setLocalCategorySelected] = useState('');
+    const [costCenterName, setCostCenterName] = useState('');
+    const [globalCategory, setGlobalCategory] = useState('');
+    const [jobClassifications, setJobClassifications] = useState('');
+    const [jobFamily, setJobFamily] = useState('');
+    const [jobProfile, setJobProfile] = useState('');
+    const [organisationID, setOrganisationID] = useState('');
+    const [teamLead, setTeamLead] = useState('');
 
     const [subLosOptions, setSubLosOptions] = useState({ options: [], disabled: true });
     const [teamOptions, setTeamOptions] = useState({ options: [], disabled: true });
@@ -48,8 +56,26 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
     const [localCategoriesOptions, setLocalCategoriesOptions] = useState({ options: [], disabled: true });
     const [teamLeadersOptions, setTeamLeadersOptions] = useState({ options: [], disabled: true });
 
+    useEffect(() => {
+        form.setFieldsValue({
+            globalCategory: globalCategory,
+        });
+    }, [globalCategory]);
+
     const onFinish = values => {
-        console.log('Received values of form:', values);
+        const allValuesForm = {
+            ...values,
+            costCenterName: costCenterName,
+            globalCategory: globalCategory,
+            jobClassifications: jobClassifications,
+            jobFamily: jobFamily,
+            jobProfile: jobProfile,
+            organisationID: organisationID,
+            teamLead: teamLead,
+        };
+        console.log('Received values of form:', allValuesForm);
+        setLoadingSubmit(true);
+        setTimeout(() => setLoadingSubmit(false), 5000);
     };
 
     const handleChangeOnMatrixElements = (value, from) => {
@@ -109,8 +135,14 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                 setTeamLeadersOptions({ options: [], disabled: true });
 
                 const allResultsCategoryInOffice = Object.entries(matrixWD['LoS'][losSelected][subLosSelected][teamSelected][value]);
-                console.log(allResultsCategoryInOffice[0]);
+                const currentCostCenterID = allResultsCategoryInOffice[0][0].replace('\n', '');
+                const currentLocalCategoriesNode = allResultsCategoryInOffice[0][1];
+
+                setCostCenterID(currentCostCenterID);
+                setMatrixCurrentCategoriesNode(currentLocalCategoriesNode);
+
                 const allCategoryResults = Object.entries(allResultsCategoryInOffice[0][1]);
+
                 const allLocalCategories = allCategoryResults.map(category => category[0]);
                 allLocalCategories.forEach(category => tempOptions.push({ label: category, value: category }));
 
@@ -118,14 +150,26 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                 break;
             case 'localCategory':
                 setLocalCategorySelected(value);
+                const nodeObject = matrixCurrentCategoriesNode[value];
+                setCostCenterName(nodeObject.costCenterName);
+                setGlobalCategory(nodeObject.globalCategory);
+                setJobClassifications(nodeObject.jobClassifications);
+                setJobFamily(nodeObject.jobFamily);
+                setJobProfile(nodeObject.jobProfile);
+                setOrganisationID(nodeObject.organisationID);
 
+                let teamLead;
+                if (!!nodeObject.teamLead) {
+                    setTeamLead(nodeObject.teamLead);
+                    teamLead = nodeObject.teamLead;
+                } else {
+                    teamLead = 'Sin información';
+                }
+
+                setTeamLeadersOptions({ options: [{ label: teamLead, value: teamLead }], disabled: false });
             default:
                 break;
         }
-    };
-
-    const handleChange = e => {
-        console.log(e);
     };
 
     const handleChangeTypeWorker = value => {
@@ -145,9 +189,8 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
             centered
             footer={null}
             loading={loadingSubmit}
-            confirmLoading={loadingSubmit}
         >
-            <div className="container">
+            <Spin spinning={loadingSubmit}>
                 <Form form={form} name="dynamic_form_complex" layout="vertical" onFinish={onFinish} autoComplete="off">
                     <Form.Item
                         name="typeRecruitment"
@@ -162,7 +205,7 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                         <Select options={typeRecruitment} placeholder="Seleccionar" />
                     </Form.Item>
                     <Divider />
-                    <div className="grid grid-cols-3 gap-x-4 xs:grid-cols-1">
+                    <div className="grid grid-cols-3 gap-x-4 gap-y-2 max-[500px]:grid-cols-1">
                         <Form.Item name="LoS" label="LoS" rules={[{ required: true, message: 'Obligatorio' }]}>
                             <Select
                                 options={losOptions}
@@ -173,6 +216,7 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
 
                         <Form.Item name="Sub LoS" label="Sub LoS" rules={[{ required: true, message: 'Obligatorio' }]}>
                             <Select
+                                showSearch
                                 options={subLosOptions.options}
                                 placeholder="Seleccionar"
                                 disabled={subLosOptions.disabled}
@@ -182,6 +226,7 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
 
                         <Form.Item name="Team" label="Equipo" rules={[{ required: true, message: 'Obligatorio' }]}>
                             <Select
+                                showSearch
                                 options={teamOptions.options}
                                 placeholder="Seleccionar"
                                 disabled={teamOptions.disabled}
@@ -200,6 +245,7 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
 
                         <Form.Item name="localCategory" label="Categoría Local" rules={[{ required: true, message: 'Obligatorio' }]}>
                             <Select
+                                showSearch
                                 options={localCategoriesOptions.options}
                                 placeholder="Seleccionar"
                                 disabled={localCategoriesOptions.disabled}
@@ -208,7 +254,11 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                         </Form.Item>
 
                         <Form.Item name="globalCategory" label="Categoría Global">
-                            <Input placeholder="Seleccionar" disabled value="123" />
+                            <Input placeholder="Pendiente" disabled value={globalCategory} />
+                        </Form.Item>
+
+                        <Form.Item name="Team Lead" label="Team Lead" rules={[{ required: true, message: 'Obligatorio' }]}>
+                            <Select options={teamLeadersOptions.options} placeholder="Seleccionar" disabled={teamLeadersOptions.disabled} />
                         </Form.Item>
 
                         <Form.Item
@@ -234,7 +284,7 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                                 },
                             ]}
                         >
-                            <DatePicker showToday={false} placeholder="Seleccionar" />
+                            <DatePicker showToday={false} placeholder="Seleccionar" className="w-full" />
                         </Form.Item>
 
                         <Form.Item
@@ -247,7 +297,7 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                                 },
                             ]}
                         >
-                            <DatePicker showToday={false} placeholder="Seleccionar" />
+                            <DatePicker showToday={false} placeholder="Seleccionar" className="w-full" />
                         </Form.Item>
 
                         <Form.Item name="typeWorker" label="Tipo de Trabajador" rules={[{ required: true, message: 'Obligatorio' }]}>
@@ -279,18 +329,39 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                                 <DatePicker showToday={false} placeholder="Seleccionar" />
                             </Form.Item>
                         </div>
-
-                        <Form.Item name="Team Lead" label="Team Lead" rules={[{ required: true, message: 'Obligatorio' }]}>
-                            <Select placeholder="Seleccionar" />
-                        </Form.Item>
                     </div>
+                    <Form.Item
+                        name="justification"
+                        label="Justificación del Negocio"
+                        rules={[
+                            {
+                                required: true,
+                                message: 'Obligatorio',
+                                validator: (component, value) => {
+                                    if (!!value && value.length >= 1 && value.length <= 200) {
+                                        return Promise.resolve();
+                                    } else {
+                                        return Promise.reject('Obligatorio');
+                                    }
+                                },
+                            },
+                        ]}
+                    >
+                        <TextArea
+                            maxLength={200}
+                            style={{
+                                height: 60,
+                            }}
+                            placeholder="Ingresar texto"
+                        />
+                    </Form.Item>
                     <Form.Item>
-                        <Button type="primary" htmlType="submit" loading={loadingSubmit}>
+                        <Button type="primary" htmlType="submit" loading={loadingSubmit} className="w-full mt-4">
                             CREAR VACANTE
                         </Button>
                     </Form.Item>
                 </Form>
-            </div>
+            </Spin>
         </Modal>
     );
 };
