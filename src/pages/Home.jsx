@@ -7,6 +7,7 @@ import ModalCreateVacancy from '../components/VacancyTable/ModalCreateVacancy';
 
 const Home = () => {
     const { vacancyDataForTable, matrixWD } = useLoaderData();
+    console.log(vacancyDataForTable, matrixWD);
     const [modalVacancyCreation, setModalVacancyCreation] = useState(false);
     const [locale, setLocale] = useState({
         emptyText: <Empty description="No existen registros" className="font-bold"></Empty>,
@@ -80,9 +81,9 @@ export const loaderHome = async () => {
                 })
                 .getMatrixWD();
         });
-        const vacancyDataForTable = await promiseData;
+        let vacancyDataForTable = await promiseData;
+        vacancyDataForTable = JSON.parse(vacancyDataForTable);
         const matrixWD = await promiseMatrix;
-        console.log(vacancyDataForTable, matrixWD);
         return { vacancyDataForTable, matrixWD };
     }
 };

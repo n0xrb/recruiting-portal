@@ -1,4 +1,4 @@
-import { memo, useId } from 'react';
+import { useId } from 'react';
 import { SettingFilled, UserOutlined, SearchOutlined, FilterFilled } from '@ant-design/icons';
 import { Badge, Dropdown } from 'antd';
 import FilterColumnTableVacancy from './FilterColumnTableVacancy';
@@ -56,7 +56,7 @@ const columnsVacancyTable = () => {
             width: 100,
             align: 'center',
             render: (_, record) => {
-                return record.requestID.toString().substring(1, 8);
+                return record.requestID.toString();
             },
             filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => {
                 return (
@@ -91,7 +91,10 @@ const columnsVacancyTable = () => {
             filterIcon: () => {
                 return <SearchOutlined />;
             },
-            onFilter: (value, record) => record.startDateVancancy.toString().includes(value),
+            onFilter: (value, record) => record.startDate.toString().includes(value),
+            render: (_, record) => {
+                return new Date(record.startDate).toISOString().slice(0, 10);
+            },
         },
         {
             title: 'Fecha Ingreso',
@@ -112,6 +115,9 @@ const columnsVacancyTable = () => {
                 return <SearchOutlined />;
             },
             onFilter: (value, record) => record.employeeStartDate.toString().includes(value),
+            render: (_, record) => {
+                return new Date(record.employeeStartDate).toISOString().slice(0, 10);
+            },
         },
         {
             title: 'Tipo Trabajador',
@@ -400,13 +406,26 @@ const columnsVacancyTable = () => {
                     key: useId(),
                 },
             ],
-            onFilter: (value, record) => record.jobTitle.includes(value),
+            onFilter: (value, record) => record.office.includes(value),
         },
         {
             title: 'Solicitante',
             dataIndex: 'requestedBy',
             ellipsis: true,
-            sorter: (a, b) => a.requestedBy - b.requestedBy,
+            filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => {
+                return (
+                    <FilterColumnTableVacancy
+                        setSelectedKeys={setSelectedKeys}
+                        selectedKeys={selectedKeys}
+                        confirm={confirm}
+                        clearFilters={clearFilters}
+                    />
+                );
+            },
+            filterIcon: () => {
+                return <SearchOutlined />;
+            },
+            onFilter: (value, record) => record.requestedBy.toString().includes(value),
         },
         {
             title: 'LoS',

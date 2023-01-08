@@ -1,6 +1,8 @@
 import { memo, useRef, useState, useEffect } from 'react';
 import { Modal, Select, DatePicker, Divider, Form, Button, InputNumber, Input, Spin, Result } from 'antd';
+import { createNewVacancyRequest } from '@getters';
 const { TextArea } = Input;
+
 const typeRecruitment = [
     {
         label: 'Reclutamiento',
@@ -15,42 +17,43 @@ const typeRecruitment = [
         value: 'Evaluación Psicolaboral',
     },
 ];
+
 const dateFormat = 'YYYY/MM/DD';
+
 const typeWorkerOptions = [
     { label: 'Plazo Fijo', value: 'Plazo Fijo' },
     { label: 'Regular', value: 'Regular' },
     { label: 'Trainee', value: 'Trainee' },
     { label: 'Socio', value: 'Socio' },
 ];
-const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, matrixWD }) => {
-    const [losOptions, setLosOptions] = useState([
-        { label: 'Assurance', value: 'Assurance' },
-        { label: 'Tax', value: 'Tax' },
-        { label: 'Advisory', value: 'Advisory' },
-        { label: 'IFS', value: 'Internal Firm Service' },
-    ]);
+const losOptions = [
+    { label: 'Assurance', value: 'Assurance' },
+    { label: 'Tax', value: 'Tax' },
+    { label: 'Advisory', value: 'Advisory' },
+    { label: 'IFS', value: 'Internal Firm Service' },
+];
 
+const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, matrixWD }) => {
     const [costCenterID, setCostCenterID] = useState('');
     const [matrixCurrentCategoriesNode, setMatrixCurrentCategoriesNode] = useState([]);
 
     const [loadingSubmit, setLoadingSubmit] = useState(false);
     const [successRequest, setSuccessRequest] = useState(false);
     const [errorRequest, setErrorRequest] = useState(false);
+    const [requestIDCreated, setRequestIDCreated] = useState('');
+
     const fixedTermContainer = useRef();
     const [form] = Form.useForm();
 
     const [losSelected, setLosSelected] = useState('');
     const [subLosSelected, setSubLosSelected] = useState('');
     const [teamSelected, setTeamSelected] = useState('');
-    const [officeSelected, setOfficeSelected] = useState('');
-    const [localCategorySelected, setLocalCategorySelected] = useState('');
     const [costCenterName, setCostCenterName] = useState('');
     const [globalCategory, setGlobalCategory] = useState('');
     const [jobClassifications, setJobClassifications] = useState('');
     const [jobFamily, setJobFamily] = useState('');
     const [jobProfile, setJobProfile] = useState('');
     const [organisationID, setOrganisationID] = useState('');
-    const [teamLead, setTeamLead] = useState('');
 
     const [subLosOptions, setSubLosOptions] = useState({ options: [], disabled: true });
     const [teamOptions, setTeamOptions] = useState({ options: [], disabled: true });
@@ -64,7 +67,15 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
         });
     }, [globalCategory]);
 
-    const onFinish = values => {
+    const onFinish = async values => {
+        const startDateFormatted = new Date(values.startDate).toISOString().slice(0, 10);
+        const employeeEndDateFormatted = !!values.employeeEndDate ? new Date(values.employeeEndDate).toISOString().slice(0, 10) : 'N/A';
+        const employeeStartDate = new Date(values.employeeStartDate).toISOString().slice(0, 10);
+
+        delete values['employeeEndDate'];
+        delete values['employeeStartDate'];
+        delete values['startDate'];
+
         const allValuesForm = {
             ...values,
             costCenterName: costCenterName,
@@ -74,15 +85,41 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
             jobProfile: jobProfile,
             organisationID: organisationID,
             costCenterID: costCenterID,
+            startDateFormatted: startDateFormatted,
+            employeeEndDateFormatted: employeeEndDateFormatted,
+            employeeStartDate: employeeStartDate,
+            subLos: values['Sub LoS'],
+            teamLead: values['Team Lead'],
         };
-        console.log(allValuesForm);
         setLoadingSubmit(true);
-        setTimeout(() => {
+
+        const environment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+
+        if (environment) {
+            setTimeout(() => {
+                setLoadingSubmit(false);
+                setSuccessRequest(true);
+                setTimeout(() => setModalVacancyCreation(false), 5000);
+            }, 5000);
+        } else {
+            const promiseSaveData = new Promise((resolve, reject) => {
+                google.script.run
+                    .withSuccessHandler(result => {
+                        resolve(result);
+                    })
+                    .withFailureHandler(error => {
+                        reject(error);
+                    })
+                    .createNewVacancyRequest(allValuesForm);
+            });
+
+            const requestID = await promiseSaveData;
+            setRequestIDCreated(requestID);
             setLoadingSubmit(false);
             setSuccessRequest(true);
-            /* setErrorRequest(true); */
-            setTimeout(() => setModalVacancyCreation(false), 5000);
-        }, 5000);
+
+            setTimeout(() => setModalVacancyCreation(false), 8000);
+        }
     };
 
     const handleChangeOnMatrixElements = (value, from) => {
@@ -136,8 +173,6 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                 setOfficesOptions({ options: tempOptions, disabled: false });
                 break;
             case 'Office':
-                setOfficeSelected(value);
-
                 setTeamLeadersOptions({ options: [], disabled: true });
 
                 const allResultsCategoryInOffice = Object.entries(matrixWD['LoS'][losSelected][subLosSelected][teamSelected][value]);
@@ -155,7 +190,6 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                 setLocalCategoriesOptions({ options: tempOptions, disabled: false });
                 break;
             case 'localCategory':
-                setLocalCategorySelected(value);
                 const nodeObject = matrixCurrentCategoriesNode[value];
                 setCostCenterName(nodeObject.costCenterName);
                 setGlobalCategory(nodeObject.globalCategory);
@@ -166,7 +200,6 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
 
                 let teamLead;
                 if (!!nodeObject.teamLead) {
-                    setTeamLead(nodeObject.teamLead);
                     teamLead = nodeObject.teamLead;
                 } else {
                     teamLead = 'Sin información';
@@ -201,7 +234,9 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                     status="success"
                     title="Solicitud creada correctamente."
                     subTitle={
-                        'Número de solicitud:  XXXXXXXXXXXXXX. Se ha notificado tanto a Socio, Business Partner y Reclutamiento, para seguir con el proceso se requiere la aprobación del socio.'
+                        'Número de solicitud:  ' +
+                        requestIDCreated +
+                        '. Se ha notificado tanto a Socio, Business Partner y Reclutamiento, para seguir con el proceso se requiere la aprobación del socio.'
                     }
                 />
             ) : null}

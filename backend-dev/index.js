@@ -5931,3 +5931,7 @@ export const getMatrixWD = () => {
         },
     };
 };
+
+export const createNewVacancyRequest = () => {
+    return '';
+};
