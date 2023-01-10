@@ -1,0 +1,18 @@
+{
+    "timeZone": "America/La_Paz",
+    "dependencies": {
+        "libraries": [
+            {
+                "userSymbol": "AlaSQL",
+                "version": "10",
+                "libraryId": "1XWR3NzQW6fINaIaROhzsxXqRREfKXAdbKoATNbpygoune43oCmez1N8U"
+            }
+        ]
+    },
+    "exceptionLogging": "STACKDRIVER",
+    "runtimeVersion": "V8",
+    "webapp": {
+        "executeAs": "USER_DEPLOYING",
+        "access": "MYSELF"
+    }
+}
