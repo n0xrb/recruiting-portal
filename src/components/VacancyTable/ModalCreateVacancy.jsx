@@ -1,6 +1,5 @@
 import { memo, useRef, useState, useEffect } from 'react';
 import { Modal, Select, DatePicker, Divider, Form, Button, InputNumber, Input, Spin, Result } from 'antd';
-import { createNewVacancyRequest } from '@getters';
 const { TextArea } = Input;
 
 const typeRecruitment = [
@@ -32,6 +31,8 @@ const losOptions = [
     { label: 'Advisory', value: 'Advisory' },
     { label: 'IFS', value: 'Internal Firm Service' },
 ];
+
+const optionsDate = { year: 'numeric', month: 'numeric', day: 'numeric' };
 
 const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, matrixWD }) => {
     const [costCenterID, setCostCenterID] = useState('');
@@ -68,9 +69,11 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
     }, [globalCategory]);
 
     const onFinish = async values => {
-        const startDateFormatted = new Date(values.startDate).toISOString().slice(0, 10);
-        const employeeEndDateFormatted = !!values.employeeEndDate ? new Date(values.employeeEndDate).toISOString().slice(0, 10) : 'N/A';
-        const employeeStartDate = new Date(values.employeeStartDate).toISOString().slice(0, 10);
+        const startDateFormatted = new Date(values.startDate).toLocaleDateString('es-CL', optionsDate);
+        const employeeEndDateFormatted = !!values.employeeEndDate
+            ? new Date(values.employeeEndDate).toLocaleDateString('es-CL', optionsDate)
+            : 'N/A';
+        const employeeStartDate = new Date(values.employeeStartDate).toLocaleDateString('es-CL', optionsDate);
 
         delete values['employeeEndDate'];
         delete values['employeeStartDate'];
@@ -91,10 +94,12 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
             subLos: values['Sub LoS'],
             teamLead: values['Team Lead'],
         };
+
         setLoadingSubmit(true);
 
         const environment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 
+        console.log(allValuesForm);
         if (environment) {
             setTimeout(() => {
                 setLoadingSubmit(false);
@@ -102,21 +107,25 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                 setTimeout(() => setModalVacancyCreation(false), 5000);
             }, 5000);
         } else {
-            const promiseSaveData = new Promise((resolve, reject) => {
-                google.script.run
-                    .withSuccessHandler(result => {
-                        resolve(result);
-                    })
-                    .withFailureHandler(error => {
-                        reject(error);
-                    })
-                    .createNewVacancyRequest(allValuesForm);
-            });
+            try {
+                const promiseSaveData = new Promise((resolve, reject) => {
+                    google.script.run
+                        .withSuccessHandler(result => {
+                            resolve(result);
+                        })
+                        .withFailureHandler(error => {
+                            reject(error);
+                        })
+                        .createNewVacancyRequest(allValuesForm);
+                });
 
-            const requestID = await promiseSaveData;
-            setRequestIDCreated(requestID);
-            setLoadingSubmit(false);
-            setSuccessRequest(true);
+                const requestID = await promiseSaveData;
+                setLoadingSubmit(false);
+                setRequestIDCreated(requestID);
+                setSuccessRequest(true);
+            } catch (error) {
+                setErrorRequest(true);
+            }
 
             setTimeout(() => setModalVacancyCreation(false), 8000);
         }
@@ -199,11 +208,8 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
                 setOrganisationID(nodeObject.organisationID);
 
                 let teamLead;
-                if (!!nodeObject.teamLead) {
-                    teamLead = nodeObject.teamLead;
-                } else {
-                    teamLead = 'Sin información';
-                }
+
+                !!nodeObject.teamLead ? (teamLead = nodeObject.teamLead) : (teamLead = 'Sin información');
 
                 setTeamLeadersOptions({ options: [{ label: teamLead, value: teamLead }], disabled: false });
             default:
@@ -228,6 +234,8 @@ const ModalCreateVacancy = ({ modalVacancyCreation, setModalVacancyCreation, mat
             centered
             footer={null}
             loading={loadingSubmit}
+            bodyStyle={{ 'max-height': '80vh', 'overflow-y': 'scroll', 'padding-right': '20px' }}
+            className="!w-[700px]"
         >
             {successRequest ? (
                 <Result

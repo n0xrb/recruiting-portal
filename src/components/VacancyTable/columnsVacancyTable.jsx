@@ -1,14 +1,9 @@
 import { useId } from 'react';
-import { SettingFilled, UserOutlined, SearchOutlined, FilterFilled } from '@ant-design/icons';
-import { Badge, Dropdown } from 'antd';
 import FilterColumnTableVacancy from './FilterColumnTableVacancy';
+import { Badge, Dropdown } from 'antd';
+import { SettingFilled, UserOutlined, SearchOutlined, FilterFilled } from '@ant-design/icons';
 
 const columnsVacancyTable = () => {
-    const handleButtonClick = e => {
-        message.info('Click on left button.');
-        console.log('click left button', e);
-    };
-
     const handleMenuClick = e => {
         message.info('Click on menu item.');
         console.log('click', e);
@@ -55,9 +50,6 @@ const columnsVacancyTable = () => {
             dataIndex: 'requestID',
             width: 100,
             align: 'center',
-            render: (_, record) => {
-                return record.requestID.toString();
-            },
             filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => {
                 return (
                     <FilterColumnTableVacancy

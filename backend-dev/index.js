@@ -1,7 +1,7 @@
 export const getAllDataVacancy = () => {
     const data = [
         {
-            requestID: 'b62995e4-a3ff-4db1-8232-584c19256cf9',
+            requestID: 'B62995E4',
             startDate: '8/8/2022',
             employeeStartDate: '10/27/2022',
             typeWorker: 'Plazo Fijo',
@@ -15,7 +15,7 @@ export const getAllDataVacancy = () => {
             action: 'eget',
         },
         {
-            requestID: 'bf25f9c0-47a6-4372-962b-14b8bf88c10f',
+            requestID: 'BF25F9C0',
             startDate: '10/16/2022',
             employeeStartDate: '4/26/2022',
             typeWorker: 'Socio',
@@ -29,7 +29,7 @@ export const getAllDataVacancy = () => {
             action: 'tristique',
         },
         {
-            requestID: '05294ca9-9793-4994-ac7f-a34af47f5261',
+            requestID: '05294CA9',
             startDate: '8/17/2022',
             employeeStartDate: '2/18/2022',
             typeWorker: 'Socio',
@@ -43,7 +43,7 @@ export const getAllDataVacancy = () => {
             action: 'eu',
         },
         {
-            requestID: 'cb174e52-34f2-4784-9cb6-86db77fce732',
+            requestID: 'CB174E52',
             startDate: '4/10/2022',
             employeeStartDate: '5/19/2022',
             typeWorker: 'Regular',
@@ -57,7 +57,7 @@ export const getAllDataVacancy = () => {
             action: 'amet',
         },
         {
-            requestID: '773f3908-3b75-42f6-ab12-e8fda79aff63',
+            requestID: '773F3908',
             startDate: '12/5/2022',
             employeeStartDate: '5/29/2022',
             typeWorker: 'Regular',
@@ -71,7 +71,7 @@ export const getAllDataVacancy = () => {
             action: 'donec',
         },
         {
-            requestID: '370261de-824e-467f-b8e2-4e26cd03d30a',
+            requestID: '370261DE',
             startDate: '5/5/2022',
             employeeStartDate: '12/11/2022',
             typeWorker: 'Trainee',
@@ -85,7 +85,7 @@ export const getAllDataVacancy = () => {
             action: 'semper',
         },
         {
-            requestID: 'bef02f20-034c-42a2-9b0a-d7371673ea5d',
+            requestID: 'BEF02F20',
             startDate: '11/22/2022',
             employeeStartDate: '9/2/2022',
             typeWorker: 'Regular',
@@ -99,7 +99,7 @@ export const getAllDataVacancy = () => {
             action: 'risus',
         },
         {
-            requestID: 'a24691d2-59c9-4d95-b5e1-855d31330a3b',
+            requestID: 'A24691D2',
             startDate: '9/18/2022',
             employeeStartDate: '8/4/2022',
             typeWorker: 'Plazo Fijo',
@@ -113,7 +113,7 @@ export const getAllDataVacancy = () => {
             action: 'egestas',
         },
         {
-            requestID: '43fc1ed4-10e6-404a-b061-83413edb384e',
+            requestID: '43FC1ED4',
             startDate: '8/14/2022',
             employeeStartDate: '2/15/2022',
             typeWorker: 'Regular',
@@ -127,7 +127,7 @@ export const getAllDataVacancy = () => {
             action: 'imperdiet',
         },
         {
-            requestID: '42515756-f859-4e87-8376-1c08949b8020',
+            requestID: '42515756',
             startDate: '6/7/2022',
             employeeStartDate: '1/24/2022',
             typeWorker: 'Trainee',
@@ -141,7 +141,7 @@ export const getAllDataVacancy = () => {
             action: 'quam',
         },
         {
-            requestID: '7c3f6454-3f54-455e-b1c9-5d9f9f6ba4bd',
+            requestID: '7C3F6454',
             startDate: '9/7/2022',
             employeeStartDate: '3/15/2022',
             typeWorker: 'Socio',
@@ -155,7 +155,7 @@ export const getAllDataVacancy = () => {
             action: 'vivamus',
         },
         {
-            requestID: '613827cf-f5f1-4900-8d8b-90990a05b5e0',
+            requestID: '613827CF',
             startDate: '10/20/2022',
             employeeStartDate: '10/21/2022',
             typeWorker: 'Socio',
@@ -169,7 +169,7 @@ export const getAllDataVacancy = () => {
             action: 'elementum',
         },
         {
-            requestID: '08b55895-c886-401e-9b34-93b82fcc1e9e',
+            requestID: '08B55895',
             startDate: '2/24/2022',
             employeeStartDate: '12/27/2022',
             typeWorker: 'Regular',
@@ -183,7 +183,7 @@ export const getAllDataVacancy = () => {
             action: 'rhoncus',
         },
         {
-            requestID: '4d9dd707-26a3-49f5-8395-babc9bd0c2f3',
+            requestID: '4D9DD707',
             startDate: '5/12/2022',
             employeeStartDate: '11/29/2022',
             typeWorker: 'Regular',
@@ -197,7 +197,7 @@ export const getAllDataVacancy = () => {
             action: 'mattis',
         },
         {
-            requestID: 'ed2fb463-7830-460c-8c0f-16eb208400ac',
+            requestID: 'ED2FB463',
             startDate: '3/2/2022',
             employeeStartDate: '10/14/2022',
             typeWorker: 'Plazo Fijo',
@@ -211,7 +211,7 @@ export const getAllDataVacancy = () => {
             action: 'accumsan',
         },
         {
-            requestID: 'db881e68-5122-41b4-b6fa-fbfa8dc07508',
+            requestID: 'DB881E68',
             startDate: '9/2/2022',
             employeeStartDate: '5/9/2022',
             typeWorker: 'Trainee',
@@ -225,7 +225,7 @@ export const getAllDataVacancy = () => {
             action: 'amet',
         },
         {
-            requestID: '68758b8d-7fbf-4db8-b084-8d2b05286285',
+            requestID: '68758B8D',
             startDate: '6/26/2022',
             employeeStartDate: '7/11/2022',
             typeWorker: 'Trainee',
@@ -239,7 +239,7 @@ export const getAllDataVacancy = () => {
             action: 'non',
         },
         {
-            requestID: '53afb9a8-3c30-40b1-bab7-100a70dc3edf',
+            requestID: '53AFB9A8',
             startDate: '9/30/2022',
             employeeStartDate: '11/8/2022',
             typeWorker: 'Plazo Fijo',
@@ -253,7 +253,7 @@ export const getAllDataVacancy = () => {
             action: 'integer',
         },
         {
-            requestID: '4159b200-5653-4da9-a476-b669bb1cead8',
+            requestID: '4159B200',
             startDate: '10/27/2022',
             employeeStartDate: '6/17/2022',
             typeWorker: 'Socio',
@@ -267,7 +267,7 @@ export const getAllDataVacancy = () => {
             action: 'placerat',
         },
         {
-            requestID: 'f62a2c9b-9ce0-4e74-a89a-ff802b46aae6',
+            requestID: 'F62A2C9B',
             startDate: '8/2/2022',
             employeeStartDate: '5/26/2022',
             typeWorker: 'Socio',
@@ -281,7 +281,7 @@ export const getAllDataVacancy = () => {
             action: 'vestibulum',
         },
         {
-            requestID: '2d6bcf41-8252-4442-a91e-15406b54ae40',
+            requestID: '2D6BCF41',
             startDate: '4/25/2022',
             employeeStartDate: '3/13/2022',
             typeWorker: 'Trainee',
@@ -295,7 +295,7 @@ export const getAllDataVacancy = () => {
             action: 'eget',
         },
         {
-            requestID: '70eeb264-fdd1-4a6d-99ab-ed214ab74fa6',
+            requestID: '70EEB264',
             startDate: '11/27/2022',
             employeeStartDate: '4/25/2022',
             typeWorker: 'Socio',
@@ -309,7 +309,7 @@ export const getAllDataVacancy = () => {
             action: 'dolor',
         },
         {
-            requestID: '62048184-36a2-4c08-95c4-17d64e7a78d9',
+            requestID: '62048184',
             startDate: '3/20/2022',
             employeeStartDate: '10/2/2022',
             typeWorker: 'Plazo Fijo',
@@ -323,7 +323,7 @@ export const getAllDataVacancy = () => {
             action: 'at',
         },
         {
-            requestID: '197d3706-5439-41b5-b0fd-15b7aff8cc35',
+            requestID: '197D3706',
             startDate: '4/8/2022',
             employeeStartDate: '1/15/2022',
             typeWorker: 'Regular',
@@ -337,7 +337,7 @@ export const getAllDataVacancy = () => {
             action: 'cras',
         },
         {
-            requestID: 'dfc10d7d-bbcc-4412-a9b7-9826dfbbba7d',
+            requestID: 'DFC10D7D',
             startDate: '11/13/2022',
             employeeStartDate: '7/4/2022',
             typeWorker: 'Plazo Fijo',
@@ -351,7 +351,7 @@ export const getAllDataVacancy = () => {
             action: 'erat',
         },
         {
-            requestID: '2750ec64-46e4-4c4e-8304-041475e6e5cb',
+            requestID: '2750EC64',
             startDate: '11/17/2022',
             employeeStartDate: '12/24/2022',
             typeWorker: 'Regular',
@@ -365,7 +365,7 @@ export const getAllDataVacancy = () => {
             action: 'congue',
         },
         {
-            requestID: '798d503e-1c37-41c0-9520-7972d1aac6a3',
+            requestID: '798D503E',
             startDate: '9/1/2022',
             employeeStartDate: '2/6/2022',
             typeWorker: 'Trainee',
@@ -379,7 +379,7 @@ export const getAllDataVacancy = () => {
             action: 'non',
         },
         {
-            requestID: 'b0defab7-b9f0-4455-84d8-6bed2505386f',
+            requestID: 'B0DEFAB7',
             startDate: '4/10/2022',
             employeeStartDate: '10/11/2022',
             typeWorker: 'Trainee',
@@ -393,7 +393,7 @@ export const getAllDataVacancy = () => {
             action: 'ut',
         },
         {
-            requestID: '00f2442d-2ae4-4b80-82b8-d0a515fd7616',
+            requestID: '00F2442D',
             startDate: '4/26/2022',
             employeeStartDate: '12/15/2022',
             typeWorker: 'Trainee',
@@ -407,7 +407,7 @@ export const getAllDataVacancy = () => {
             action: 'congue',
         },
         {
-            requestID: '7e66eb62-8c3e-45ce-b6d6-9092462d42e2',
+            requestID: '7E66EB62',
             startDate: '11/16/2022',
             employeeStartDate: '5/11/2022',
             typeWorker: 'Regular',
@@ -421,7 +421,7 @@ export const getAllDataVacancy = () => {
             action: 'libero',
         },
         {
-            requestID: '589ffd83-d384-46eb-b2d0-ab91d34e561a',
+            requestID: '589FFD83',
             startDate: '11/11/2022',
             employeeStartDate: '6/2/2022',
             typeWorker: 'Plazo Fijo',
@@ -435,7 +435,7 @@ export const getAllDataVacancy = () => {
             action: 'ullamcorper',
         },
         {
-            requestID: 'bd699bd4-29be-4f87-a80b-5047a04e64ba',
+            requestID: 'BD699BD4',
             startDate: '10/2/2022',
             employeeStartDate: '12/31/2022',
             typeWorker: 'Trainee',
@@ -449,7 +449,7 @@ export const getAllDataVacancy = () => {
             action: 'suscipit',
         },
         {
-            requestID: '2590b144-ddad-4a65-88f3-2f8db72184ce',
+            requestID: '2590B144',
             startDate: '9/15/2022',
             employeeStartDate: '7/25/2022',
             typeWorker: 'Plazo Fijo',
@@ -463,7 +463,7 @@ export const getAllDataVacancy = () => {
             action: 'quisque',
         },
         {
-            requestID: 'a876b801-e6c8-4efa-b3e9-841db2bcc157',
+            requestID: 'A876B801',
             startDate: '12/20/2022',
             employeeStartDate: '12/13/2022',
             typeWorker: 'Plazo Fijo',
@@ -477,7 +477,7 @@ export const getAllDataVacancy = () => {
             action: 'orci',
         },
         {
-            requestID: 'f4c7a426-a7de-4641-9af4-780bbc6dd6dc',
+            requestID: 'F4C7A426',
             startDate: '7/19/2022',
             employeeStartDate: '11/22/2022',
             typeWorker: 'Plazo Fijo',
@@ -491,7 +491,7 @@ export const getAllDataVacancy = () => {
             action: 'in',
         },
         {
-            requestID: '5b47cd8d-20f3-490c-be6c-678bafd02977',
+            requestID: '5B47CD8D',
             startDate: '10/19/2022',
             employeeStartDate: '3/25/2022',
             typeWorker: 'Plazo Fijo',
@@ -505,7 +505,7 @@ export const getAllDataVacancy = () => {
             action: 'vitae',
         },
         {
-            requestID: '512b135d-c6e3-45eb-983c-454a99882b65',
+            requestID: '512B135D',
             startDate: '2/3/2022',
             employeeStartDate: '4/29/2022',
             typeWorker: 'Plazo Fijo',
@@ -519,7 +519,7 @@ export const getAllDataVacancy = () => {
             action: 'feugiat',
         },
         {
-            requestID: 'eea034e8-701d-4983-a70b-6b99b2780f91',
+            requestID: 'EEA034E8',
             startDate: '11/7/2022',
             employeeStartDate: '1/1/2023',
             typeWorker: 'Trainee',
@@ -533,7 +533,7 @@ export const getAllDataVacancy = () => {
             action: 'sit',
         },
         {
-            requestID: '7ed6510d-2c9c-4ed0-b5cf-d96aa2ef66e2',
+            requestID: '7ED6510D',
             startDate: '6/12/2022',
             employeeStartDate: '3/15/2022',
             typeWorker: 'Plazo Fijo',
@@ -547,7 +547,7 @@ export const getAllDataVacancy = () => {
             action: 'phasellus',
         },
         {
-            requestID: '75490e84-ba47-4b15-919e-99ece1fdfc51',
+            requestID: '75490E84',
             startDate: '9/22/2022',
             employeeStartDate: '4/15/2022',
             typeWorker: 'Plazo Fijo',
@@ -561,7 +561,7 @@ export const getAllDataVacancy = () => {
             action: 'donec',
         },
         {
-            requestID: '807df1fa-6521-4310-981f-7ef40a78f370',
+            requestID: '807DF1FA',
             startDate: '10/19/2022',
             employeeStartDate: '1/8/2022',
             typeWorker: 'Regular',
@@ -575,7 +575,7 @@ export const getAllDataVacancy = () => {
             action: 'vestibulum',
         },
         {
-            requestID: '3777186c-31fb-43be-81f6-0c8fac8e55f2',
+            requestID: '3777186C',
             startDate: '10/20/2022',
             employeeStartDate: '8/6/2022',
             typeWorker: 'Socio',
@@ -589,7 +589,7 @@ export const getAllDataVacancy = () => {
             action: 'dictumst',
         },
         {
-            requestID: '1d876a96-46ee-4049-9100-12ae1ffea434',
+            requestID: '1D876A96',
             startDate: '7/25/2022',
             employeeStartDate: '6/28/2022',
             typeWorker: 'Plazo Fijo',
@@ -603,7 +603,7 @@ export const getAllDataVacancy = () => {
             action: 'blandit',
         },
         {
-            requestID: '659e0b1a-38fc-45ba-b2a8-b71b6099e6e0',
+            requestID: '659E0B1A',
             startDate: '2/10/2022',
             employeeStartDate: '8/30/2022',
             typeWorker: 'Trainee',
@@ -617,7 +617,7 @@ export const getAllDataVacancy = () => {
             action: 'ipsum',
         },
         {
-            requestID: '2ac557ae-e435-43bc-9ea5-a9132eecd183',
+            requestID: '2AC557AE',
             startDate: '4/19/2022',
             employeeStartDate: '6/3/2022',
             typeWorker: 'Trainee',
@@ -631,7 +631,7 @@ export const getAllDataVacancy = () => {
             action: 'donec',
         },
         {
-            requestID: '6b7ef7a3-f277-4512-91d4-28f209c090ac',
+            requestID: '6B7EF7A3',
             startDate: '9/2/2022',
             employeeStartDate: '2/15/2022',
             typeWorker: 'Plazo Fijo',
@@ -645,7 +645,7 @@ export const getAllDataVacancy = () => {
             action: 'non',
         },
         {
-            requestID: 'cc9b46dc-0fb2-4e6a-9792-32e52ccd5ed9',
+            requestID: 'CC9B46DC',
             startDate: '1/11/2022',
             employeeStartDate: '11/5/2022',
             typeWorker: 'Trainee',
@@ -659,7 +659,7 @@ export const getAllDataVacancy = () => {
             action: 'porttitor',
         },
         {
-            requestID: '3194c87a-3888-49e6-93e5-078e3a097162',
+            requestID: '3194C87A',
             startDate: '4/25/2022',
             employeeStartDate: '5/26/2022',
             typeWorker: 'Socio',
@@ -673,7 +673,7 @@ export const getAllDataVacancy = () => {
             action: 'vehicula',
         },
         {
-            requestID: 'cb16c090-3523-4fb5-852a-55ab999de474',
+            requestID: 'CB16C090',
             startDate: '8/24/2022',
             employeeStartDate: '10/24/2022',
             typeWorker: 'Trainee',
@@ -687,7 +687,7 @@ export const getAllDataVacancy = () => {
             action: 'porta',
         },
         {
-            requestID: '71799bac-f45b-4669-acf4-20c1e0f40f00',
+            requestID: '71799BAC',
             startDate: '7/30/2022',
             employeeStartDate: '11/27/2022',
             typeWorker: 'Trainee',
@@ -701,7 +701,7 @@ export const getAllDataVacancy = () => {
             action: 'aliquam',
         },
         {
-            requestID: 'fcd76dd9-a8c6-465c-ae74-31ab2de5dd20',
+            requestID: 'FCD76DD9',
             startDate: '8/9/2022',
             employeeStartDate: '12/8/2022',
             typeWorker: 'Trainee',
@@ -715,7 +715,7 @@ export const getAllDataVacancy = () => {
             action: 'platea',
         },
         {
-            requestID: '3d2abb51-4892-4d18-bf99-450ae9e330d5',
+            requestID: '3D2ABB51',
             startDate: '9/6/2022',
             employeeStartDate: '5/23/2022',
             typeWorker: 'Socio',
@@ -729,7 +729,7 @@ export const getAllDataVacancy = () => {
             action: 'arcu',
         },
         {
-            requestID: '0d30f3b4-fd45-4be4-a2ed-17b4b4f6ab60',
+            requestID: '0D30F3B4',
             startDate: '10/6/2022',
             employeeStartDate: '2/19/2022',
             typeWorker: 'Trainee',
@@ -743,7 +743,7 @@ export const getAllDataVacancy = () => {
             action: 'id',
         },
         {
-            requestID: 'd4f90481-6756-4e50-b86b-d814034dbae1',
+            requestID: 'D4F90481',
             startDate: '11/10/2022',
             employeeStartDate: '2/18/2022',
             typeWorker: 'Plazo Fijo',
@@ -757,7 +757,7 @@ export const getAllDataVacancy = () => {
             action: 'vulputate',
         },
         {
-            requestID: '1ca6fa88-b703-4706-ab9b-4fd8a1e6a27a',
+            requestID: '1CA6FA88',
             startDate: '5/14/2022',
             employeeStartDate: '10/26/2022',
             typeWorker: 'Regular',
@@ -771,7 +771,7 @@ export const getAllDataVacancy = () => {
             action: 'dolor',
         },
         {
-            requestID: 'a7495cc8-e6a5-4361-8c90-403bb3745706',
+            requestID: 'A7495CC8',
             startDate: '3/12/2022',
             employeeStartDate: '7/18/2022',
             typeWorker: 'Trainee',
@@ -785,7 +785,7 @@ export const getAllDataVacancy = () => {
             action: 'risus',
         },
         {
-            requestID: '4e209a71-a7ca-4027-a83d-6233a3785e3d',
+            requestID: '4E209A71',
             startDate: '1/12/2022',
             employeeStartDate: '12/16/2022',
             typeWorker: 'Socio',
@@ -799,7 +799,7 @@ export const getAllDataVacancy = () => {
             action: 'interdum',
         },
         {
-            requestID: 'd308f317-98c6-4be7-a582-e1834feef867',
+            requestID: 'D308F317',
             startDate: '3/23/2022',
             employeeStartDate: '8/22/2022',
             typeWorker: 'Trainee',
@@ -813,7 +813,7 @@ export const getAllDataVacancy = () => {
             action: 'aliquet',
         },
         {
-            requestID: 'fb622b07-d06f-4158-9ba6-aebab831a5ca',
+            requestID: 'FB622B07',
             startDate: '7/15/2022',
             employeeStartDate: '9/21/2022',
             typeWorker: 'Plazo Fijo',
@@ -827,7 +827,7 @@ export const getAllDataVacancy = () => {
             action: 'et',
         },
         {
-            requestID: '83456b38-9b3f-412b-9d35-db28b3f22ff7',
+            requestID: '83456B38',
             startDate: '5/22/2022',
             employeeStartDate: '7/2/2022',
             typeWorker: 'Regular',
@@ -841,7 +841,7 @@ export const getAllDataVacancy = () => {
             action: 'quam',
         },
         {
-            requestID: 'fc7b5fe6-a4cb-4395-a492-a9e737951f2c',
+            requestID: 'FC7B5FE6',
             startDate: '10/23/2022',
             employeeStartDate: '11/4/2022',
             typeWorker: 'Trainee',
@@ -855,7 +855,7 @@ export const getAllDataVacancy = () => {
             action: 'odio',
         },
         {
-            requestID: '9dbc3433-11e2-40b4-8c8c-318543b49e45',
+            requestID: '9DBC3433',
             startDate: '10/23/2022',
             employeeStartDate: '8/26/2022',
             typeWorker: 'Plazo Fijo',
@@ -869,7 +869,7 @@ export const getAllDataVacancy = () => {
             action: 'in',
         },
         {
-            requestID: '9192f9c0-751d-4fd9-9f0c-2a9014a3e0b0',
+            requestID: '9192F9C0',
             startDate: '9/20/2022',
             employeeStartDate: '12/8/2022',
             typeWorker: 'Trainee',
@@ -883,7 +883,7 @@ export const getAllDataVacancy = () => {
             action: 'augue',
         },
         {
-            requestID: '4d25886b-2c54-41bf-a141-86f6c78df04d',
+            requestID: '4D25886B',
             startDate: '12/8/2022',
             employeeStartDate: '12/9/2022',
             typeWorker: 'Socio',
@@ -897,7 +897,7 @@ export const getAllDataVacancy = () => {
             action: 'justo',
         },
         {
-            requestID: 'fb368cbb-0761-4132-b9b9-cd3839d88b33',
+            requestID: 'FB368CBB',
             startDate: '3/4/2022',
             employeeStartDate: '7/1/2022',
             typeWorker: 'Plazo Fijo',
@@ -911,7 +911,7 @@ export const getAllDataVacancy = () => {
             action: 'enim',
         },
         {
-            requestID: 'ea270fa4-3d25-4a3a-a753-3a48cf873613',
+            requestID: 'EA270FA4',
             startDate: '11/22/2022',
             employeeStartDate: '5/26/2022',
             typeWorker: 'Socio',
@@ -925,7 +925,7 @@ export const getAllDataVacancy = () => {
             action: 'id',
         },
         {
-            requestID: '52c0d65c-135c-4a0c-bfa3-c93bd2681842',
+            requestID: '52C0D65C',
             startDate: '11/17/2022',
             employeeStartDate: '11/2/2022',
             typeWorker: 'Socio',
@@ -939,7 +939,7 @@ export const getAllDataVacancy = () => {
             action: 'nullam',
         },
         {
-            requestID: 'ebb5665f-c78d-40f5-8ad7-eaea184c4ea8',
+            requestID: 'EBB5665F',
             startDate: '2/20/2022',
             employeeStartDate: '2/18/2022',
             typeWorker: 'Trainee',
@@ -953,7 +953,7 @@ export const getAllDataVacancy = () => {
             action: 'ante',
         },
         {
-            requestID: '8468c48c-9f21-44e5-9007-caf02be71e75',
+            requestID: '8468C48C',
             startDate: '2/28/2022',
             employeeStartDate: '9/10/2022',
             typeWorker: 'Plazo Fijo',
@@ -967,7 +967,7 @@ export const getAllDataVacancy = () => {
             action: 'quis',
         },
         {
-            requestID: '5e1aeaea-b2eb-47ee-935d-aafff166d0bc',
+            requestID: '5E1AEAEA',
             startDate: '12/5/2022',
             employeeStartDate: '9/9/2022',
             typeWorker: 'Trainee',
@@ -981,7 +981,7 @@ export const getAllDataVacancy = () => {
             action: 'odio',
         },
         {
-            requestID: '5ac437da-c615-4eef-81d3-84c45b7a2d5b',
+            requestID: '5AC437DA',
             startDate: '2/14/2022',
             employeeStartDate: '1/16/2022',
             typeWorker: 'Socio',
@@ -995,7 +995,7 @@ export const getAllDataVacancy = () => {
             action: 'etiam',
         },
         {
-            requestID: '0663b776-6d37-4f26-822c-ba3d90117ed9',
+            requestID: '0663B776',
             startDate: '2/16/2022',
             employeeStartDate: '2/14/2022',
             typeWorker: 'Socio',
@@ -1009,7 +1009,7 @@ export const getAllDataVacancy = () => {
             action: 'consequat',
         },
         {
-            requestID: 'b016b619-6528-434b-a9ba-3fb1108307ab',
+            requestID: 'B016B619',
             startDate: '4/17/2022',
             employeeStartDate: '8/25/2022',
             typeWorker: 'Socio',
@@ -1023,7 +1023,7 @@ export const getAllDataVacancy = () => {
             action: 'diam',
         },
         {
-            requestID: '0b486fa6-64f9-4833-8947-ca407d0d7447',
+            requestID: '0B486FA6',
             startDate: '11/12/2022',
             employeeStartDate: '1/17/2022',
             typeWorker: 'Socio',
@@ -1037,7 +1037,7 @@ export const getAllDataVacancy = () => {
             action: 'ligula',
         },
         {
-            requestID: 'd4f0e84e-092f-4016-b8ce-ecd642e7da73',
+            requestID: 'D4F0E84E',
             startDate: '8/14/2022',
             employeeStartDate: '5/26/2022',
             typeWorker: 'Socio',
@@ -1051,7 +1051,7 @@ export const getAllDataVacancy = () => {
             action: 'ut',
         },
         {
-            requestID: '6d1b375a-0ada-4cb8-a8db-9a34b5ab16b2',
+            requestID: '6D1B375A',
             startDate: '8/30/2022',
             employeeStartDate: '11/22/2022',
             typeWorker: 'Trainee',
@@ -1065,7 +1065,7 @@ export const getAllDataVacancy = () => {
             action: 'neque',
         },
         {
-            requestID: '1dc96bbf-ebdb-48ab-b690-35d547b24733',
+            requestID: '1DC96BBF',
             startDate: '9/3/2022',
             employeeStartDate: '7/6/2022',
             typeWorker: 'Trainee',
@@ -1079,7 +1079,7 @@ export const getAllDataVacancy = () => {
             action: 'vitae',
         },
         {
-            requestID: '8448d11a-2796-4a03-a87c-0b0abb41b8e1',
+            requestID: '8448D11A',
             startDate: '10/17/2022',
             employeeStartDate: '9/1/2022',
             typeWorker: 'Plazo Fijo',
@@ -1093,7 +1093,7 @@ export const getAllDataVacancy = () => {
             action: 'tincidunt',
         },
         {
-            requestID: '0fb76e02-c3bd-4bc6-8a14-8f5fd0e44e76',
+            requestID: '0FB76E02',
             startDate: '4/3/2022',
             employeeStartDate: '10/12/2022',
             typeWorker: 'Plazo Fijo',
@@ -1107,7 +1107,7 @@ export const getAllDataVacancy = () => {
             action: 'quam',
         },
         {
-            requestID: '1612986c-e45e-4098-b7f5-e0b85d9fc987',
+            requestID: '1612986C',
             startDate: '10/5/2022',
             employeeStartDate: '2/17/2022',
             typeWorker: 'Plazo Fijo',
@@ -1121,7 +1121,7 @@ export const getAllDataVacancy = () => {
             action: 'odio',
         },
         {
-            requestID: 'e28d6aeb-2ad8-47d8-9c95-e1ae2c5d8da4',
+            requestID: 'E28D6AEB',
             startDate: '12/23/2022',
             employeeStartDate: '7/21/2022',
             typeWorker: 'Plazo Fijo',
@@ -1135,7 +1135,7 @@ export const getAllDataVacancy = () => {
             action: 'molestie',
         },
         {
-            requestID: '4c82197f-c74f-47a1-8618-ef675ff463ae',
+            requestID: '4C82197F',
             startDate: '6/29/2022',
             employeeStartDate: '2/18/2022',
             typeWorker: 'Socio',
@@ -1149,7 +1149,7 @@ export const getAllDataVacancy = () => {
             action: 'nisl',
         },
         {
-            requestID: '404a207f-013e-4352-a18d-f782b0f7713c',
+            requestID: '404A207F',
             startDate: '11/14/2022',
             employeeStartDate: '3/22/2022',
             typeWorker: 'Regular',
@@ -1163,7 +1163,7 @@ export const getAllDataVacancy = () => {
             action: 'vivamus',
         },
         {
-            requestID: 'd8064c62-e968-4d69-9c8d-88c09974b8ac',
+            requestID: 'D8064C62',
             startDate: '9/6/2022',
             employeeStartDate: '9/16/2022',
             typeWorker: 'Socio',
@@ -1177,7 +1177,7 @@ export const getAllDataVacancy = () => {
             action: 'eu',
         },
         {
-            requestID: '83939e75-2bc8-4a8f-bca4-89ada68a761c',
+            requestID: '83939E75',
             startDate: '4/24/2022',
             employeeStartDate: '4/12/2022',
             typeWorker: 'Regular',
@@ -1191,7 +1191,7 @@ export const getAllDataVacancy = () => {
             action: 'est',
         },
         {
-            requestID: 'bff6e1ba-6894-43d8-841f-89e05c671e54',
+            requestID: 'BFF6E1BA',
             startDate: '3/9/2022',
             employeeStartDate: '5/5/2022',
             typeWorker: 'Plazo Fijo',
@@ -1205,7 +1205,7 @@ export const getAllDataVacancy = () => {
             action: 'faucibus',
         },
         {
-            requestID: 'eca3657a-b23e-465f-a952-a669d95c60d7',
+            requestID: 'ECA3657A',
             startDate: '7/8/2022',
             employeeStartDate: '2/15/2022',
             typeWorker: 'Trainee',
@@ -1219,7 +1219,7 @@ export const getAllDataVacancy = () => {
             action: 'quis',
         },
         {
-            requestID: 'be0d9368-e597-4eb0-80c1-8b39e29bb30f',
+            requestID: 'BE0D9368',
             startDate: '10/1/2022',
             employeeStartDate: '9/1/2022',
             typeWorker: 'Regular',
@@ -1233,7 +1233,7 @@ export const getAllDataVacancy = () => {
             action: 'amet',
         },
         {
-            requestID: '4d66e308-e4f1-4440-9cb5-c9c886cc533a',
+            requestID: '4D66E308',
             startDate: '2/1/2022',
             employeeStartDate: '8/25/2022',
             typeWorker: 'Plazo Fijo',
@@ -1247,7 +1247,7 @@ export const getAllDataVacancy = () => {
             action: 'aliquam',
         },
         {
-            requestID: '2c014343-9910-43c9-86e6-b8107fba2430',
+            requestID: '2C014343',
             startDate: '11/3/2022',
             employeeStartDate: '12/10/2022',
             typeWorker: 'Regular',
@@ -1261,7 +1261,7 @@ export const getAllDataVacancy = () => {
             action: 'duis',
         },
         {
-            requestID: '22566a7d-91f9-40ff-bf77-1dd6403c51c5',
+            requestID: '22566A7D',
             startDate: '8/20/2022',
             employeeStartDate: '12/22/2022',
             typeWorker: 'Regular',
@@ -1275,7 +1275,7 @@ export const getAllDataVacancy = () => {
             action: 'pede',
         },
         {
-            requestID: '546d53fd-294d-4118-b559-977fbf5b3964',
+            requestID: '546D53FD',
             startDate: '8/10/2022',
             employeeStartDate: '7/25/2022',
             typeWorker: 'Trainee',
@@ -1289,7 +1289,7 @@ export const getAllDataVacancy = () => {
             action: 'et',
         },
         {
-            requestID: 'e92b64a9-ec0c-4503-a538-8e5b9ae46634',
+            requestID: 'E92B64A9',
             startDate: '5/12/2022',
             employeeStartDate: '6/14/2022',
             typeWorker: 'Plazo Fijo',
@@ -1303,7 +1303,7 @@ export const getAllDataVacancy = () => {
             action: 'sem',
         },
         {
-            requestID: 'f69aebc0-08f4-4f77-8b04-f37ce6f15a9c',
+            requestID: 'F69AEBC0',
             startDate: '9/26/2022',
             employeeStartDate: '11/9/2022',
             typeWorker: 'Plazo Fijo',
@@ -1317,7 +1317,7 @@ export const getAllDataVacancy = () => {
             action: 'dictumst',
         },
         {
-            requestID: '582d4d37-d71a-4207-bd77-b50d05074665',
+            requestID: '582D4D37',
             startDate: '3/22/2022',
             employeeStartDate: '6/5/2022',
             typeWorker: 'Trainee',
@@ -1331,7 +1331,7 @@ export const getAllDataVacancy = () => {
             action: 'nascetur',
         },
         {
-            requestID: '042cce52-4d5c-462b-8286-e24273228b16',
+            requestID: '042CCE52',
             startDate: '12/28/2022',
             employeeStartDate: '4/2/2022',
             typeWorker: 'Plazo Fijo',
@@ -1345,7 +1345,7 @@ export const getAllDataVacancy = () => {
             action: 'non',
         },
         {
-            requestID: '3a400078-b985-4594-9c92-b872166b8921',
+            requestID: '3A400078',
             startDate: '2/16/2022',
             employeeStartDate: '3/3/2022',
             typeWorker: 'Plazo Fijo',
@@ -1359,7 +1359,7 @@ export const getAllDataVacancy = () => {
             action: 'sed',
         },
         {
-            requestID: '549b02cb-1276-4b34-ad5e-c6357ac0c714',
+            requestID: '549B02CB',
             startDate: '10/14/2022',
             employeeStartDate: '3/18/2022',
             typeWorker: 'Plazo Fijo',
@@ -1373,7 +1373,7 @@ export const getAllDataVacancy = () => {
             action: 'ipsum',
         },
         {
-            requestID: '56f18b48-3248-4279-b2be-d97df5b0fe60',
+            requestID: '56F18B48',
             startDate: '11/13/2022',
             employeeStartDate: '3/11/2022',
             typeWorker: 'Regular',
@@ -1387,7 +1387,7 @@ export const getAllDataVacancy = () => {
             action: 'justo',
         },
         {
-            requestID: 'b265dd14-fe7a-4808-8ec5-9bb2485ba689',
+            requestID: 'B265DD14',
             startDate: '12/21/2022',
             employeeStartDate: '10/21/2022',
             typeWorker: 'Socio',
@@ -1401,7 +1401,7 @@ export const getAllDataVacancy = () => {
             action: 'mauris',
         },
         {
-            requestID: 'a29e3d44-f856-4034-8542-88fd7b0594ef',
+            requestID: 'A29E3D44',
             startDate: '9/10/2022',
             employeeStartDate: '5/30/2022',
             typeWorker: 'Trainee',
@@ -1415,7 +1415,7 @@ export const getAllDataVacancy = () => {
             action: 'nisi',
         },
         {
-            requestID: 'fa542b54-9b6e-488d-8f5d-43293c3c5ce9',
+            requestID: 'FA542B54',
             startDate: '3/8/2022',
             employeeStartDate: '5/1/2022',
             typeWorker: 'Trainee',
@@ -1429,7 +1429,7 @@ export const getAllDataVacancy = () => {
             action: 'arcu',
         },
         {
-            requestID: '04249cff-cc7b-4e18-bdb2-ae3785e056bc',
+            requestID: '04249CFF',
             startDate: '2/18/2022',
             employeeStartDate: '8/11/2022',
             typeWorker: 'Trainee',
@@ -1443,7 +1443,7 @@ export const getAllDataVacancy = () => {
             action: 'et',
         },
         {
-            requestID: '5717688b-d339-44fd-a4af-0cd65d1df4c0',
+            requestID: '5717688B',
             startDate: '12/9/2022',
             employeeStartDate: '9/29/2022',
             typeWorker: 'Regular',
@@ -1457,7 +1457,7 @@ export const getAllDataVacancy = () => {
             action: 'etiam',
         },
         {
-            requestID: 'f982b6a6-fd9c-42a6-a59a-7477e942b9e1',
+            requestID: 'F982B6A6',
             startDate: '12/30/2022',
             employeeStartDate: '12/14/2022',
             typeWorker: 'Trainee',
@@ -1471,7 +1471,7 @@ export const getAllDataVacancy = () => {
             action: 'odio',
         },
         {
-            requestID: '1db72b10-baf7-402b-a27b-c24a967dab8c',
+            requestID: '1DB72B10',
             startDate: '9/7/2022',
             employeeStartDate: '6/18/2022',
             typeWorker: 'Trainee',
@@ -1485,7 +1485,7 @@ export const getAllDataVacancy = () => {
             action: 'proin',
         },
         {
-            requestID: 'b718b16a-daee-4b9e-94d1-7694ced4edc8',
+            requestID: 'B718B16A',
             startDate: '7/10/2022',
             employeeStartDate: '1/9/2022',
             typeWorker: 'Socio',
@@ -1499,7 +1499,7 @@ export const getAllDataVacancy = () => {
             action: 'tristique',
         },
         {
-            requestID: '769db983-3f56-4308-ba22-864905c129bc',
+            requestID: '769DB983',
             startDate: '1/28/2022',
             employeeStartDate: '3/31/2022',
             typeWorker: 'Trainee',
@@ -1513,7 +1513,7 @@ export const getAllDataVacancy = () => {
             action: 'iaculis',
         },
         {
-            requestID: 'ca3070a0-352e-4aed-b0b0-bde0cf56edb9',
+            requestID: 'CA3070A0',
             startDate: '4/25/2022',
             employeeStartDate: '7/22/2022',
             typeWorker: 'Socio',
@@ -1527,7 +1527,7 @@ export const getAllDataVacancy = () => {
             action: 'pede',
         },
         {
-            requestID: 'c1c9d0b7-b7fc-4cc3-a3da-065082f17cde',
+            requestID: 'C1C9D0B7',
             startDate: '7/25/2022',
             employeeStartDate: '2/26/2022',
             typeWorker: 'Trainee',
@@ -1541,7 +1541,7 @@ export const getAllDataVacancy = () => {
             action: 'interdum',
         },
         {
-            requestID: 'a7909e18-d981-48a3-bb41-14f464b0d670',
+            requestID: 'A7909E18',
             startDate: '5/5/2022',
             employeeStartDate: '3/16/2022',
             typeWorker: 'Socio',
@@ -1555,7 +1555,7 @@ export const getAllDataVacancy = () => {
             action: 'semper',
         },
         {
-            requestID: 'e528e13a-ceaf-4860-9dd7-3e883e60005c',
+            requestID: 'E528E13A',
             startDate: '7/3/2022',
             employeeStartDate: '7/2/2022',
             typeWorker: 'Socio',
@@ -1569,7 +1569,7 @@ export const getAllDataVacancy = () => {
             action: 'a',
         },
         {
-            requestID: 'ac39f830-437b-4ec5-81ac-c9e74b9deda3',
+            requestID: 'AC39F830',
             startDate: '12/17/2022',
             employeeStartDate: '9/30/2022',
             typeWorker: 'Regular',
@@ -1583,7 +1583,7 @@ export const getAllDataVacancy = () => {
             action: 'volutpat',
         },
         {
-            requestID: 'ee06ae81-72d8-4ff0-ac53-f331ab301412',
+            requestID: 'EE06AE81',
             startDate: '11/11/2022',
             employeeStartDate: '3/9/2022',
             typeWorker: 'Trainee',
@@ -1597,7 +1597,7 @@ export const getAllDataVacancy = () => {
             action: 'ultrices',
         },
         {
-            requestID: '1e4b1f18-188e-447a-b94f-9d342bf40e38',
+            requestID: '1E4B1F18',
             startDate: '3/19/2022',
             employeeStartDate: '5/14/2022',
             typeWorker: 'Trainee',
@@ -1611,7 +1611,7 @@ export const getAllDataVacancy = () => {
             action: 'tincidunt',
         },
         {
-            requestID: '30b5e845-4cfd-4b09-b573-2185161d7772',
+            requestID: '30B5E845',
             startDate: '10/8/2022',
             employeeStartDate: '5/23/2022',
             typeWorker: 'Trainee',
@@ -1625,7 +1625,7 @@ export const getAllDataVacancy = () => {
             action: 'placerat',
         },
         {
-            requestID: '9b87cf42-946f-4e4d-985f-62b076e1119d',
+            requestID: '9B87CF42',
             startDate: '7/9/2022',
             employeeStartDate: '5/21/2022',
             typeWorker: 'Trainee',
@@ -1639,7 +1639,7 @@ export const getAllDataVacancy = () => {
             action: 'dui',
         },
         {
-            requestID: '93ccbfd7-8ac1-4f28-bdc3-f39e45dddcc5',
+            requestID: '93CCBFD7',
             startDate: '3/11/2022',
             employeeStartDate: '6/29/2022',
             typeWorker: 'Socio',
@@ -1653,7 +1653,7 @@ export const getAllDataVacancy = () => {
             action: 'morbi',
         },
         {
-            requestID: '3c63f56b-fc2e-4339-b28e-13a84c7ba1a6',
+            requestID: '3C63F56B',
             startDate: '1/7/2022',
             employeeStartDate: '2/12/2022',
             typeWorker: 'Plazo Fijo',
@@ -1667,7 +1667,7 @@ export const getAllDataVacancy = () => {
             action: 'aliquet',
         },
         {
-            requestID: '3d3629d2-0482-4b48-83b5-b59dc1e1ca09',
+            requestID: '3D3629D2',
             startDate: '7/10/2022',
             employeeStartDate: '3/28/2022',
             typeWorker: 'Regular',
@@ -1681,7 +1681,7 @@ export const getAllDataVacancy = () => {
             action: 'morbi',
         },
         {
-            requestID: 'f8027efc-dff3-4ab4-b46e-4e6fe372497b',
+            requestID: 'F8027EFC',
             startDate: '5/23/2022',
             employeeStartDate: '7/21/2022',
             typeWorker: 'Plazo Fijo',
@@ -1695,7 +1695,7 @@ export const getAllDataVacancy = () => {
             action: 'mattis',
         },
         {
-            requestID: '3d9cef74-2911-4aa4-976d-6bef17b5f0a4',
+            requestID: '3D9CEF74',
             startDate: '6/3/2022',
             employeeStartDate: '10/21/2022',
             typeWorker: 'Socio',
@@ -1709,7 +1709,7 @@ export const getAllDataVacancy = () => {
             action: 'amet',
         },
         {
-            requestID: '89c62fed-361f-4ed4-a9ec-4dc78affa22a',
+            requestID: '89C62FED',
             startDate: '3/7/2022',
             employeeStartDate: '11/1/2022',
             typeWorker: 'Socio',
@@ -1723,7 +1723,7 @@ export const getAllDataVacancy = () => {
             action: 'odio',
         },
         {
-            requestID: '64972b18-2710-402b-ba16-0337609a7e4a',
+            requestID: '64972B18',
             startDate: '2/1/2022',
             employeeStartDate: '11/21/2022',
             typeWorker: 'Plazo Fijo',
@@ -1737,7 +1737,7 @@ export const getAllDataVacancy = () => {
             action: 'vivamus',
         },
         {
-            requestID: '1b04f103-9c14-4bd1-a5b1-3be0337bb348',
+            requestID: '1B04F103',
             startDate: '9/30/2022',
             employeeStartDate: '7/31/2022',
             typeWorker: 'Trainee',
@@ -1751,7 +1751,7 @@ export const getAllDataVacancy = () => {
             action: 'pulvinar',
         },
         {
-            requestID: '78df0e99-c769-4213-a441-8f5a66bfadfd',
+            requestID: '78DF0E99',
             startDate: '3/22/2022',
             employeeStartDate: '2/23/2022',
             typeWorker: 'Trainee',
@@ -1765,7 +1765,7 @@ export const getAllDataVacancy = () => {
             action: 'nulla',
         },
         {
-            requestID: 'b1dcdf33-e59b-4237-bf01-611cc843f23e',
+            requestID: 'B1DCDF33',
             startDate: '9/16/2022',
             employeeStartDate: '4/27/2022',
             typeWorker: 'Socio',
@@ -1779,7 +1779,7 @@ export const getAllDataVacancy = () => {
             action: 'donec',
         },
         {
-            requestID: 'b7ce709f-fce6-49a8-8842-42951da4a4d7',
+            requestID: 'B7CE709F',
             startDate: '9/17/2022',
             employeeStartDate: '12/15/2022',
             typeWorker: 'Trainee',
@@ -1793,7 +1793,7 @@ export const getAllDataVacancy = () => {
             action: 'a',
         },
         {
-            requestID: '390bf6dc-ca93-42a5-bcef-e66d5c2782be',
+            requestID: '390BF6DC',
             startDate: '6/12/2022',
             employeeStartDate: '11/26/2022',
             typeWorker: 'Regular',
@@ -1807,7 +1807,7 @@ export const getAllDataVacancy = () => {
             action: 'vivamus',
         },
         {
-            requestID: '04776853-0476-445c-b1d0-08fd1b7f0017',
+            requestID: '04776853',
             startDate: '12/17/2022',
             employeeStartDate: '10/15/2022',
             typeWorker: 'Trainee',
@@ -1821,7 +1821,7 @@ export const getAllDataVacancy = () => {
             action: 'euismod',
         },
         {
-            requestID: '0bb36f88-a41b-472c-9e87-b73ee1eff8d4',
+            requestID: '0BB36F88',
             startDate: '11/28/2022',
             employeeStartDate: '7/1/2022',
             typeWorker: 'Plazo Fijo',
@@ -1835,7 +1835,7 @@ export const getAllDataVacancy = () => {
             action: 'habitasse',
         },
         {
-            requestID: '8dd3cd0a-79ba-4d4f-a953-2136750b0277',
+            requestID: '8DD3CD0A',
             startDate: '5/10/2022',
             employeeStartDate: '1/31/2022',
             typeWorker: 'Regular',
@@ -1849,7 +1849,7 @@ export const getAllDataVacancy = () => {
             action: 'sociis',
         },
         {
-            requestID: '85861a4f-5d1c-44b7-bc20-09fd042423e3',
+            requestID: '85861A4F',
             startDate: '5/15/2022',
             employeeStartDate: '3/10/2022',
             typeWorker: 'Trainee',
@@ -1863,7 +1863,7 @@ export const getAllDataVacancy = () => {
             action: 'luctus',
         },
         {
-            requestID: '4246b432-5bf3-447f-98d9-8a7521394393',
+            requestID: '4246B432',
             startDate: '1/8/2022',
             employeeStartDate: '7/7/2022',
             typeWorker: 'Regular',
@@ -1877,7 +1877,7 @@ export const getAllDataVacancy = () => {
             action: 'ultrices',
         },
         {
-            requestID: 'feee7b29-d3fe-45fe-b882-bc4ec6ef68b9',
+            requestID: 'FEEE7B29',
             startDate: '9/8/2022',
             employeeStartDate: '9/17/2022',
             typeWorker: 'Trainee',
@@ -1891,7 +1891,7 @@ export const getAllDataVacancy = () => {
             action: 'non',
         },
         {
-            requestID: '989ba3b7-d608-448d-ac09-6cc4b33f6a93',
+            requestID: '989BA3B7',
             startDate: '8/11/2022',
             employeeStartDate: '10/27/2022',
             typeWorker: 'Socio',
@@ -1905,7 +1905,7 @@ export const getAllDataVacancy = () => {
             action: 'in',
         },
         {
-            requestID: '4a33a98a-2dd4-4361-9d0f-6faa356b2e23',
+            requestID: '4A33A98A',
             startDate: '9/3/2022',
             employeeStartDate: '1/19/2022',
             typeWorker: 'Regular',
@@ -1919,7 +1919,7 @@ export const getAllDataVacancy = () => {
             action: 'consequat',
         },
         {
-            requestID: 'a763dd4b-6b47-4d33-819f-9e420528e4f4',
+            requestID: 'A763DD4B',
             startDate: '5/6/2022',
             employeeStartDate: '3/29/2022',
             typeWorker: 'Socio',
@@ -1933,7 +1933,7 @@ export const getAllDataVacancy = () => {
             action: 'lacinia',
         },
         {
-            requestID: 'bd92d89a-54a8-44db-8dc1-2dfa73ff09d1',
+            requestID: 'BD92D89A',
             startDate: '10/2/2022',
             employeeStartDate: '2/4/2022',
             typeWorker: 'Socio',
@@ -1947,7 +1947,7 @@ export const getAllDataVacancy = () => {
             action: 'mus',
         },
         {
-            requestID: '0cf04b37-0560-489c-a5ed-e3d90a7ff3d7',
+            requestID: '0CF04B37',
             startDate: '6/19/2022',
             employeeStartDate: '9/10/2022',
             typeWorker: 'Trainee',
@@ -1961,7 +1961,7 @@ export const getAllDataVacancy = () => {
             action: 'lacinia',
         },
         {
-            requestID: '147aef3d-3d2c-4360-bd76-c522cecaf6c4',
+            requestID: '147AEF3D',
             startDate: '1/25/2022',
             employeeStartDate: '9/14/2022',
             typeWorker: 'Regular',
@@ -1975,7 +1975,7 @@ export const getAllDataVacancy = () => {
             action: 'hac',
         },
         {
-            requestID: '9714a8a9-85f6-4196-87db-b39c046841f2',
+            requestID: '9714A8A9',
             startDate: '3/16/2022',
             employeeStartDate: '9/26/2022',
             typeWorker: 'Plazo Fijo',
@@ -1989,7 +1989,7 @@ export const getAllDataVacancy = () => {
             action: 'ut',
         },
         {
-            requestID: '8be9fed4-8f2c-43b9-a776-615f42d45527',
+            requestID: '8BE9FED4',
             startDate: '10/31/2022',
             employeeStartDate: '1/25/2022',
             typeWorker: 'Trainee',
@@ -2003,7 +2003,7 @@ export const getAllDataVacancy = () => {
             action: 'scelerisque',
         },
         {
-            requestID: '1f4f8102-b439-4c02-bbb4-351dfa2a7806',
+            requestID: '1F4F8102',
             startDate: '9/10/2022',
             employeeStartDate: '4/8/2022',
             typeWorker: 'Socio',
@@ -2017,7 +2017,7 @@ export const getAllDataVacancy = () => {
             action: 'vulputate',
         },
         {
-            requestID: '637040ee-63a2-4783-89ca-e931c78bf2b3',
+            requestID: '637040EE',
             startDate: '4/1/2022',
             employeeStartDate: '1/4/2023',
             typeWorker: 'Socio',
@@ -2031,7 +2031,7 @@ export const getAllDataVacancy = () => {
             action: 'quam',
         },
         {
-            requestID: 'd13cc36e-072e-494b-b96b-c3cc3cb2978c',
+            requestID: 'D13CC36E',
             startDate: '9/22/2022',
             employeeStartDate: '10/13/2022',
             typeWorker: 'Socio',
@@ -2045,7 +2045,7 @@ export const getAllDataVacancy = () => {
             action: 'aliquam',
         },
         {
-            requestID: 'f47f6bbf-76aa-4735-b6f4-1b90d2d5ec94',
+            requestID: 'F47F6BBF',
             startDate: '11/24/2022',
             employeeStartDate: '5/30/2022',
             typeWorker: 'Trainee',
@@ -2059,7 +2059,7 @@ export const getAllDataVacancy = () => {
             action: 'in',
         },
         {
-            requestID: '2308657b-d5e3-4991-8d9f-1e54553976ca',
+            requestID: '2308657B',
             startDate: '4/30/2022',
             employeeStartDate: '6/6/2022',
             typeWorker: 'Socio',
@@ -2073,7 +2073,7 @@ export const getAllDataVacancy = () => {
             action: 'platea',
         },
         {
-            requestID: '9bce6bf8-39c2-4f7b-aeda-88074fed7d4a',
+            requestID: '9BCE6BF8',
             startDate: '11/23/2022',
             employeeStartDate: '1/28/2022',
             typeWorker: 'Plazo Fijo',
@@ -2087,7 +2087,7 @@ export const getAllDataVacancy = () => {
             action: 'neque',
         },
         {
-            requestID: '8c90acc0-9f5a-4585-ab59-ceaa41007326',
+            requestID: '8C90ACC0',
             startDate: '7/24/2022',
             employeeStartDate: '8/22/2022',
             typeWorker: 'Trainee',
@@ -2101,7 +2101,7 @@ export const getAllDataVacancy = () => {
             action: 'in',
         },
         {
-            requestID: '7c04aa22-31bb-438e-b07e-c4d7f049811d',
+            requestID: '7C04AA22',
             startDate: '6/11/2022',
             employeeStartDate: '10/6/2022',
             typeWorker: 'Plazo Fijo',
@@ -2115,7 +2115,7 @@ export const getAllDataVacancy = () => {
             action: 'pellentesque',
         },
         {
-            requestID: '7f63e1b7-f94b-48ce-b3b9-ad1390d5fd5a',
+            requestID: '7F63E1B7',
             startDate: '3/24/2022',
             employeeStartDate: '11/30/2022',
             typeWorker: 'Regular',
@@ -2129,7 +2129,7 @@ export const getAllDataVacancy = () => {
             action: 'pede',
         },
         {
-            requestID: '12a9075d-13e5-4674-9f96-9b9b46cc7cc5',
+            requestID: '12A9075D',
             startDate: '4/30/2022',
             employeeStartDate: '6/16/2022',
             typeWorker: 'Plazo Fijo',
@@ -2143,7 +2143,7 @@ export const getAllDataVacancy = () => {
             action: 'in',
         },
         {
-            requestID: '1e175bf9-77a9-4c02-a79a-08249b6ea21d',
+            requestID: '1E175BF9',
             startDate: '9/18/2022',
             employeeStartDate: '6/30/2022',
             typeWorker: 'Plazo Fijo',
@@ -2157,7 +2157,7 @@ export const getAllDataVacancy = () => {
             action: 'in',
         },
         {
-            requestID: '6861813c-b0db-4738-9963-c51354b09e54',
+            requestID: '6861813C',
             startDate: '4/4/2022',
             employeeStartDate: '1/22/2022',
             typeWorker: 'Trainee',
@@ -2171,7 +2171,7 @@ export const getAllDataVacancy = () => {
             action: 'purus',
         },
         {
-            requestID: '9fb3da75-7a8d-48fc-836a-c8841dd6c5b0',
+            requestID: '9FB3DA75',
             startDate: '3/14/2022',
             employeeStartDate: '6/22/2022',
             typeWorker: 'Regular',
@@ -2185,7 +2185,7 @@ export const getAllDataVacancy = () => {
             action: 'integer',
         },
         {
-            requestID: 'f3c51f8b-8719-4bd1-aba8-a394a7934180',
+            requestID: 'F3C51F8B',
             startDate: '10/8/2022',
             employeeStartDate: '10/18/2022',
             typeWorker: 'Trainee',
@@ -2199,7 +2199,7 @@ export const getAllDataVacancy = () => {
             action: 'duis',
         },
         {
-            requestID: 'faf1629d-611f-4ca4-bcbb-0429bd481658',
+            requestID: 'FAF1629D',
             startDate: '1/31/2022',
             employeeStartDate: '8/1/2022',
             typeWorker: 'Trainee',
@@ -2213,7 +2213,7 @@ export const getAllDataVacancy = () => {
             action: 'ipsum',
         },
         {
-            requestID: '18871183-7d12-4f82-9231-085b24fe1c9b',
+            requestID: '18871183',
             startDate: '7/2/2022',
             employeeStartDate: '8/16/2022',
             typeWorker: 'Regular',
@@ -2227,7 +2227,7 @@ export const getAllDataVacancy = () => {
             action: 'justo',
         },
         {
-            requestID: 'f99feaa1-e051-4d84-8e33-99dca3a9da0a',
+            requestID: 'F99FEAA1',
             startDate: '7/2/2022',
             employeeStartDate: '9/14/2022',
             typeWorker: 'Plazo Fijo',
@@ -2241,7 +2241,7 @@ export const getAllDataVacancy = () => {
             action: 'nibh',
         },
         {
-            requestID: '92f5a67b-0726-4f62-ab06-f89e0bd321b3',
+            requestID: '92F5A67B',
             startDate: '8/29/2022',
             employeeStartDate: '11/6/2022',
             typeWorker: 'Trainee',
@@ -2255,7 +2255,7 @@ export const getAllDataVacancy = () => {
             action: 'mattis',
         },
         {
-            requestID: 'f1cb3e9e-1575-4fd9-89d0-dc64e540ffca',
+            requestID: 'F1CB3E9E',
             startDate: '6/15/2022',
             employeeStartDate: '10/18/2022',
             typeWorker: 'Trainee',
@@ -2269,7 +2269,7 @@ export const getAllDataVacancy = () => {
             action: 'turpis',
         },
         {
-            requestID: 'b6894e4d-d6d5-4d8f-9bff-dd3b661e222d',
+            requestID: 'B6894E4D',
             startDate: '10/28/2022',
             employeeStartDate: '7/12/2022',
             typeWorker: 'Plazo Fijo',
@@ -2283,7 +2283,7 @@ export const getAllDataVacancy = () => {
             action: 'id',
         },
         {
-            requestID: '55d9de1a-de53-483c-a17d-2a53724a281c',
+            requestID: '55D9DE1A',
             startDate: '6/3/2022',
             employeeStartDate: '11/7/2022',
             typeWorker: 'Trainee',
@@ -2297,7 +2297,7 @@ export const getAllDataVacancy = () => {
             action: 'lobortis',
         },
         {
-            requestID: '7531be3f-ccb6-49ff-ac08-fe9a3a8a8a13',
+            requestID: '7531BE3F',
             startDate: '2/10/2022',
             employeeStartDate: '3/27/2022',
             typeWorker: 'Plazo Fijo',
@@ -2311,7 +2311,7 @@ export const getAllDataVacancy = () => {
             action: 'lacinia',
         },
         {
-            requestID: 'dc14f9db-ea91-4421-872f-c82257c63525',
+            requestID: 'DC14F9DB',
             startDate: '1/14/2022',
             employeeStartDate: '7/1/2022',
             typeWorker: 'Regular',
@@ -2325,7 +2325,7 @@ export const getAllDataVacancy = () => {
             action: 'orci',
         },
         {
-            requestID: '28681c53-b6d6-4ff9-90cf-aea5f6b5286f',
+            requestID: '28681C53',
             startDate: '11/30/2022',
             employeeStartDate: '8/21/2022',
             typeWorker: 'Plazo Fijo',
@@ -2339,7 +2339,7 @@ export const getAllDataVacancy = () => {
             action: 'ac',
         },
         {
-            requestID: 'fb7ff748-3eba-45b5-9bfd-47c16c32796c',
+            requestID: 'FB7FF748',
             startDate: '3/9/2022',
             employeeStartDate: '12/20/2022',
             typeWorker: 'Plazo Fijo',
@@ -2353,7 +2353,7 @@ export const getAllDataVacancy = () => {
             action: 'dictumst',
         },
         {
-            requestID: '40814dda-9df5-400a-8dc5-fc68fd3b4744',
+            requestID: '40814DDA',
             startDate: '6/4/2022',
             employeeStartDate: '10/2/2022',
             typeWorker: 'Plazo Fijo',
@@ -2367,7 +2367,7 @@ export const getAllDataVacancy = () => {
             action: 'velit',
         },
         {
-            requestID: '88f7f4ef-60e5-4ba1-bd86-880ded4ab696',
+            requestID: '88F7F4EF',
             startDate: '8/29/2022',
             employeeStartDate: '9/22/2022',
             typeWorker: 'Regular',
@@ -2381,7 +2381,7 @@ export const getAllDataVacancy = () => {
             action: 'imperdiet',
         },
         {
-            requestID: '6c505b0f-be86-4dda-a72a-e005dd9496c6',
+            requestID: '6C505B0F',
             startDate: '1/8/2022',
             employeeStartDate: '6/1/2022',
             typeWorker: 'Trainee',
@@ -2395,7 +2395,7 @@ export const getAllDataVacancy = () => {
             action: 'et',
         },
         {
-            requestID: 'f667db92-df90-4ac9-bbb7-0d034ea8026b',
+            requestID: 'F667DB92',
             startDate: '4/18/2022',
             employeeStartDate: '12/23/2022',
             typeWorker: 'Socio',
@@ -2409,7 +2409,7 @@ export const getAllDataVacancy = () => {
             action: 'vel',
         },
         {
-            requestID: 'b202f16e-e79a-44e6-8819-989d33c28b0e',
+            requestID: 'B202F16E',
             startDate: '5/12/2022',
             employeeStartDate: '7/12/2022',
             typeWorker: 'Plazo Fijo',
@@ -2423,7 +2423,7 @@ export const getAllDataVacancy = () => {
             action: 'tempus',
         },
         {
-            requestID: 'ca394c14-d6f6-4265-9fec-e5a7a51e76a4',
+            requestID: 'CA394C14',
             startDate: '11/1/2022',
             employeeStartDate: '12/18/2022',
             typeWorker: 'Trainee',
@@ -2437,7 +2437,7 @@ export const getAllDataVacancy = () => {
             action: 'dolor',
         },
         {
-            requestID: 'efc9e62a-9a9c-475a-bd9d-0d5e57cadd40',
+            requestID: 'EFC9E62A',
             startDate: '8/13/2022',
             employeeStartDate: '3/3/2022',
             typeWorker: 'Socio',
@@ -2451,7 +2451,7 @@ export const getAllDataVacancy = () => {
             action: 'in',
         },
         {
-            requestID: '6dc5a06c-c968-4c84-b69b-e975ca814f38',
+            requestID: '6DC5A06C',
             startDate: '7/25/2022',
             employeeStartDate: '10/18/2022',
             typeWorker: 'Plazo Fijo',
@@ -2465,7 +2465,7 @@ export const getAllDataVacancy = () => {
             action: 'sed',
         },
         {
-            requestID: '7a0cedf7-e6c3-43ad-abf0-4c97162ea65a',
+            requestID: '7A0CEDF7',
             startDate: '12/7/2022',
             employeeStartDate: '5/24/2022',
             typeWorker: 'Plazo Fijo',
@@ -2479,7 +2479,7 @@ export const getAllDataVacancy = () => {
             action: 'vitae',
         },
         {
-            requestID: '89091904-b0f2-438d-8250-05ec50ce0c4d',
+            requestID: '89091904',
             startDate: '7/9/2022',
             employeeStartDate: '6/26/2022',
             typeWorker: 'Regular',
@@ -2493,7 +2493,7 @@ export const getAllDataVacancy = () => {
             action: 'velit',
         },
         {
-            requestID: '8d72ad98-527d-4b01-87d4-2e11b91d9128',
+            requestID: '8D72AD98',
             startDate: '1/19/2022',
             employeeStartDate: '5/29/2022',
             typeWorker: 'Plazo Fijo',
@@ -2507,7 +2507,7 @@ export const getAllDataVacancy = () => {
             action: 'posuere',
         },
         {
-            requestID: '68b280ec-e490-48ea-9285-7e6ab6f78075',
+            requestID: '68B280EC',
             startDate: '3/22/2022',
             employeeStartDate: '3/21/2022',
             typeWorker: 'Socio',
@@ -2521,7 +2521,7 @@ export const getAllDataVacancy = () => {
             action: 'id',
         },
         {
-            requestID: '7804cbdc-22c2-48d5-a055-cb26dcb22965',
+            requestID: '7804CBDC',
             startDate: '11/29/2022',
             employeeStartDate: '1/5/2022',
             typeWorker: 'Trainee',
@@ -2535,7 +2535,7 @@ export const getAllDataVacancy = () => {
             action: 'ut',
         },
         {
-            requestID: 'b43c16fa-cd28-49d1-81c1-7393a72f70dc',
+            requestID: 'B43C16FA',
             startDate: '7/14/2022',
             employeeStartDate: '8/13/2022',
             typeWorker: 'Socio',
@@ -2549,7 +2549,7 @@ export const getAllDataVacancy = () => {
             action: 'pede',
         },
         {
-            requestID: 'fa5de89b-115e-4f3b-aa2c-956c8ce95a8a',
+            requestID: 'FA5DE89B',
             startDate: '11/4/2022',
             employeeStartDate: '12/29/2022',
             typeWorker: 'Regular',
@@ -2563,7 +2563,7 @@ export const getAllDataVacancy = () => {
             action: 'eu',
         },
         {
-            requestID: 'e6496fac-636f-4aef-a9cb-965fc0bcfe6a',
+            requestID: 'E6496FAC',
             startDate: '5/1/2022',
             employeeStartDate: '4/11/2022',
             typeWorker: 'Regular',
@@ -2577,7 +2577,7 @@ export const getAllDataVacancy = () => {
             action: 'sollicitudin',
         },
         {
-            requestID: '8bc4c45a-51f7-449f-9c74-9fceca4cf73d',
+            requestID: '8BC4C45A',
             startDate: '1/21/2022',
             employeeStartDate: '1/27/2022',
             typeWorker: 'Socio',
@@ -2591,7 +2591,7 @@ export const getAllDataVacancy = () => {
             action: 'condimentum',
         },
         {
-            requestID: '00ade81a-8fb2-4cfe-b863-ed4353e54777',
+            requestID: '00ADE81A',
             startDate: '10/3/2022',
             employeeStartDate: '2/3/2022',
             typeWorker: 'Trainee',
@@ -2605,7 +2605,7 @@ export const getAllDataVacancy = () => {
             action: 'sapien',
         },
         {
-            requestID: 'a3873b97-71a2-4212-824e-31a05e70c7ee',
+            requestID: 'A3873B97',
             startDate: '3/24/2022',
             employeeStartDate: '8/28/2022',
             typeWorker: 'Trainee',
@@ -2619,7 +2619,7 @@ export const getAllDataVacancy = () => {
             action: 'vitae',
         },
         {
-            requestID: 'b501357b-381d-4a30-906e-87159981c521',
+            requestID: 'B501357B',
             startDate: '3/13/2022',
             employeeStartDate: '2/17/2022',
             typeWorker: 'Trainee',
@@ -2633,7 +2633,7 @@ export const getAllDataVacancy = () => {
             action: 'eget',
         },
         {
-            requestID: '7e75489e-72fd-4423-9a3e-81c31c00659b',
+            requestID: '7E75489E',
             startDate: '1/7/2022',
             employeeStartDate: '10/11/2022',
             typeWorker: 'Plazo Fijo',
@@ -2647,7 +2647,7 @@ export const getAllDataVacancy = () => {
             action: 'vestibulum',
         },
         {
-            requestID: 'f0193464-531d-4a1e-9d0e-00d6fac38f39',
+            requestID: 'F0193464',
             startDate: '12/5/2022',
             employeeStartDate: '8/11/2022',
             typeWorker: 'Regular',
@@ -2661,7 +2661,7 @@ export const getAllDataVacancy = () => {
             action: 'eleifend',
         },
         {
-            requestID: '14929605-b853-43db-bf0e-ba035552ec38',
+            requestID: '14929605',
             startDate: '12/19/2022',
             employeeStartDate: '1/23/2022',
             typeWorker: 'Socio',
@@ -2675,7 +2675,7 @@ export const getAllDataVacancy = () => {
             action: 'quam',
         },
         {
-            requestID: '964af038-7e88-45c7-90e8-dc0391fa4fc0',
+            requestID: '964AF038',
             startDate: '8/13/2022',
             employeeStartDate: '4/10/2022',
             typeWorker: 'Plazo Fijo',
@@ -2689,7 +2689,7 @@ export const getAllDataVacancy = () => {
             action: 'ipsum',
         },
         {
-            requestID: '4bffca06-8872-4d93-be3b-ed4954889ad4',
+            requestID: '4BFFCA06',
             startDate: '9/25/2022',
             employeeStartDate: '5/24/2022',
             typeWorker: 'Regular',
@@ -2703,7 +2703,7 @@ export const getAllDataVacancy = () => {
             action: 'non',
         },
         {
-            requestID: 'c1120f24-bb11-4977-a1a3-68425f211728',
+            requestID: 'C1120F24',
             startDate: '4/28/2022',
             employeeStartDate: '11/20/2022',
             typeWorker: 'Trainee',
@@ -2717,7 +2717,7 @@ export const getAllDataVacancy = () => {
             action: 'id',
         },
         {
-            requestID: '35166698-d135-496a-9e6c-adfb48216fee',
+            requestID: '35166698',
             startDate: '3/15/2022',
             employeeStartDate: '3/14/2022',
             typeWorker: 'Socio',
@@ -2731,7 +2731,7 @@ export const getAllDataVacancy = () => {
             action: 'placerat',
         },
         {
-            requestID: '96000e28-2990-44e6-8049-5562fe885102',
+            requestID: '96000E28',
             startDate: '11/2/2022',
             employeeStartDate: '11/8/2022',
             typeWorker: 'Trainee',
@@ -2745,7 +2745,7 @@ export const getAllDataVacancy = () => {
             action: 'aliquam',
         },
         {
-            requestID: 'ca99a9d3-64ee-4ff1-b532-0e0685cd9761',
+            requestID: 'CA99A9D3',
             startDate: '1/11/2022',
             employeeStartDate: '9/5/2022',
             typeWorker: 'Plazo Fijo',
@@ -2759,7 +2759,7 @@ export const getAllDataVacancy = () => {
             action: 'sem',
         },
         {
-            requestID: 'd947e543-f661-4ed0-9592-8824be889458',
+            requestID: 'D947E543',
             startDate: '8/10/2022',
             employeeStartDate: '1/24/2022',
             typeWorker: 'Socio',
@@ -2773,7 +2773,7 @@ export const getAllDataVacancy = () => {
             action: 'vestibulum',
         },
         {
-            requestID: '58b21a3d-977b-4ebb-b295-3a63527bc196',
+            requestID: '58B21A3D',
             startDate: '3/3/2022',
             employeeStartDate: '12/26/2022',
             typeWorker: 'Trainee',
@@ -2787,7 +2787,7 @@ export const getAllDataVacancy = () => {
             action: 'erat',
         },
         {
-            requestID: 'fd582591-4452-42e5-a705-bd89bd9dc3bb',
+            requestID: 'FD582591',
             startDate: '10/16/2022',
             employeeStartDate: '10/26/2022',
             typeWorker: 'Socio',
